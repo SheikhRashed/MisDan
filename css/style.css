@@ -656,6 +656,12 @@ body {
   color: #073a59;
 }
 
+#Team .container .abt_self .post {
+  font-size: 18px;
+  line-height: 22px;
+  color: #073a59;
+}
+
 /* about Section End */
 /* Services Section Start */
 #service .service_bg_img {
