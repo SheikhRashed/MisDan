@@ -212,20 +212,20 @@ body {
   }
 }
 
-#bg {
+.bg {
   background: url("../img/banner/banner_2.png") center center/cover no-repeat;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-#bg .container .title {
+.bg .container .title {
   color: #ecdf32;
   text-transform: uppercase;
   font-size: 48px;
 }
 
 @media (max-width: 576px) {
-  #bg .container .title {
+  .bg .container .title {
     font-size: 26px;
     line-height: 30px;
   }
