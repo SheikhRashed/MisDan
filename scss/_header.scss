@@ -1,0 +1,97 @@
+.navbar{
+    .container{
+
+        .navbar-collapse{
+
+            .navbar-nav{
+                @media(max-width: 991px) {
+                    text-align: center;
+                }
+                .nav-item{
+                    position: relative;
+                    margin: 0px 12px;
+                    @media(max-width: 991px) {
+                    //    border: 1px solid #1b3872;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0%;
+                        height: 2px;
+                        background-color: #073a59;
+                        transition: all 0.2s linear;
+                        @media(max-width: 991px) {
+                        }
+                    }
+                  &:last-child{
+                   background-color: #073a59;
+                   border: none;
+                   .nav-link{
+                       color: #ddd;
+                   }
+                    &::after{
+                     width: 0px;
+                     height: 0px;
+                    }
+                   
+                  }
+
+                  &.active{
+                    @media (max-width: 991px) {
+                        background: #ddd;
+                    }
+                      &::after{
+                          width: 100%;
+                      }
+
+                      
+                  }
+                    &:hover{
+                        @media (max-width: 991px) {
+                            background-color: #ddd;
+                        }   
+                        // background-color: #ddd;
+                        &::after{
+                            width: 100%;
+                        }
+                       &:last-child{
+                           background-color: #073a59;
+                       }
+                    }
+
+                    .nav-link{
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #1b3872;
+                        font-family: Fira_Bold;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            .form-inline{
+                @media(max-width:991px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .form-control{
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    @media (max-width: 991px) {
+                        flex: 1;   
+                    }
+                }
+                .btn{
+                   &:hover{
+                    background-color: #073a59;
+                    color: #fff;
+                   }
+                }
+            }
+        }
+    }
+}

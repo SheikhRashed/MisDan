@@ -1,0 +1,490 @@
+// Fonts.scss
+@import  './fonts';
+// functional scss
+@import './functional';
+// Common Scss file
+@import './common';
+
+@import './topBar';
+@import './header';
+
+/* banner Section Start */
+@import './bnnr';
+/* banner Section End */
+
+/* about Section Start */
+#about{
+    position: relative;
+    .container{
+
+        .abt-txt{
+            font-size: 24px;
+            line-height: 36px;
+            @media (max-width: 767px) {
+              margin: 18px 0px !important;
+              text-align: left;
+            }
+        }
+        .abt_img{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center ;
+            @media(max-width: 767px) {
+                justify-content: center;
+            }
+            img{
+                position: relative;
+            }
+            .content_img{
+                position: relative;
+            }
+            .img_overlay{
+                position: absolute;
+                background: rgba(0, 0, 0, 0.377);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                .icon{
+                    // transform: translate(-50%);
+                    // top: ;
+                    position: absolute;
+                    left: 35%;
+                    top: 50%;
+                    transform: translate(50%,-25%);
+                    i{
+                        font-size: 62px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Team{
+    .container{
+        .abt_self{
+            .name{
+                font-size: 36px;
+                line-height: 38px;
+                font-family: Fira_Medium;
+                color: #073a59;
+            }
+        }
+    }
+}
+/* about Section End */
+
+/* Services Section Start */
+#service{
+
+    .service_bg_img{
+        background: url('../img/service/HomePage--MISDAN-1410px.png') center center/cover no-repeat;
+        // padding: 120px;
+        height: 450px;
+    }
+
+}
+#services{
+
+    position: relative;
+    .our_service{
+        object-fit: contain;
+        height: 440px;
+        display: flex;
+        align-items: center;
+        // overflow: hidden;
+       
+        &.img_pro{
+            background: url('../img/service/HomePage--MISDAN-1410px.png') right no-repeat;
+           
+            @media(max-width:1024px) {
+                // background-position: 345% !important;
+            }
+        }
+        &.graphics_pro{
+            background: url('../img/service/service_2.png') left no-repeat;
+           
+           
+        }
+        &.web_pro{
+            background: url('../img/service/service_3.png') right no-repeat;
+           
+
+        }
+        &.video_pro{
+            background: url('../img/service/service_4.png') left no-repeat;
+           
+
+        }
+        &.bg_size{
+            background-size: 750px;
+            @media(max-width:1024px){
+                background-size: 450px;
+            }
+            @media(min-width:768px) and(max-width:875px) {
+                background-size: 380px;
+            }
+            @media(max-width: 767px) {
+                background: none;
+            }
+        }
+
+       .s-box{
+            .title{
+                font-size: 36px;
+                line-height: 40px;
+                color: #073a59;
+                font-family: Fira_Bold;
+                padding-bottom: 16px;
+            }
+            .txt{
+                font-size: 24px;
+                line-height: 36px;
+                @media(max-width:1024px) {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            .img_content{
+                display: flex;
+                justify-content: flex-end;
+                @media (min-width: 768px) {
+                    display:none;
+                }
+                &.left{
+                    // justify-content: flex-start;
+                    img{
+                        transform: scaleX(-1);
+                    }
+                }
+                @media(max-width:767px) {
+                    margin-bottom: 26px;
+                }
+            }
+           img{
+               width: 280px;
+           }
+       }
+    }
+
+    .service_slider{
+        background-color: #f4fbff;
+        .service_box{
+            object-fit: contain;
+            height: 440px;
+            display: flex;
+            align-items: center;
+           
+            &.img_pro{
+                background: url('../img/service/HomePage--MISDAN-1410px.png') right no-repeat;
+            }
+            &.graphics_pro{
+                background: url('../img/service/service_2_h.png') right no-repeat;
+            }
+            &.web_pro{
+                background: url('../img/service/service_3.png') right no-repeat;
+            }
+            &.video_pro{
+                background: url('../img/service/service_4_h.png') right no-repeat;
+            }
+            &.bg_size{
+                background-size: 520px;
+
+                @media(min-width:1600px) {
+                    background-size: 650px;
+                }
+                @media(max-width:1200px) {
+                    background-size: 450px;
+                }
+                @media(max-width:1024px){
+                    background-size: 275px;
+                }
+                @media(max-width: 576px) {
+                    background-size: 180px;
+                }
+                @media(max-width: 480px) {
+                    background-size: 150px;
+                }
+            }
+    
+           .s-box{
+                .title{
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: #073a59;
+                    font-family: Fira_Bold;
+                    padding-bottom: 16px;
+                    @media(max-width: 576px) {
+                        font-size: 26px;
+                        line-height: 36px;
+                        padding-bottom: 6px;
+                    }
+                }
+                .txt{
+                    font-size: 24px;
+                    line-height: 36px;
+                    @media(max-width:767px) {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+                .img_content{
+                    display: flex;
+                    justify-content: flex-end;
+                    @media (min-width: 768px) {
+                        display:none;
+                    }
+                    &.left{
+                        // justify-content: flex-start;
+                        img{
+                            transform: scaleX(-1);
+                        }
+                    }
+                    @media(max-width:767px) {
+                        margin-bottom: 26px;
+                    }
+                }
+               img{
+                   width: 280px;
+               }
+           }
+        }
+    }
+    .slick-dots{
+        display: block;
+        top: 50%;
+        left: 0%;
+        transform: translate(50%,-50%);
+        li{
+            margin: 10px 0px;
+        }
+    }
+}
+/* Services Section End */
+
+/* gallery Section Start */
+#gallery{
+    background-color: #f4fbff;
+    .container{
+
+        .filters{
+
+            .mix{
+                .content{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    .img_overlay{
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #cfae2c98;
+                        overflow: hidden;
+                        transition: all 0.2s linear;
+                        visibility: hidden;
+                        .misBtn{
+                            position: absolute;
+                            top: 50%;
+                            left: 25%;
+                            width: 50%;
+                            padding: 5px;
+                            cursor: pointer;
+                            background: rgb(13,73,109);
+                            background: linear-gradient(90deg, rgba(13,73,109,1) 0%, rgba(38,143,202,1) 100%);
+                        }
+                    }
+
+                    &:hover{
+
+                        .img_overlay{
+                            visibility: visible;
+                        }
+                    }
+                }
+              
+            }
+        }
+
+
+        .misBtn{
+            text-transform: uppercase;
+            font-family: Fira_Bold;
+            background: rgb(210,179,45);
+            background: linear-gradient(90deg, rgba(210,179,45,1) 0%, rgba(242,233,51,1) 100%);
+           
+        }
+
+    }
+
+}
+@import './filter';
+/* gallery Section End */
+
+/* client Section Start */
+#client{
+    .container{
+        .client_boxs{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 80px 90px;
+          margin-top: 60px;
+          @media (max-width: 767px) {
+              grid-template-columns: 1fr;
+          }
+            .cmnt_box{
+                position: relative;
+                background-color: #fdf9ed;
+                padding: 26px 12px;
+                border-radius: 25px;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+                .name-rating{
+
+                    .name{
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #073a59;
+                        margin-bottom: 0px;
+                    }
+                    .date{
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #073a59;
+                    }
+                    .star{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-end;
+                        margin-top: 5px;
+                    }
+                }
+                .client_feed{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #073a59;
+                }
+                .read-more{
+                    color: #073a59;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: bold;
+                }
+            }
+
+            .comment_icon{
+                position: absolute;
+                top: -55px;
+                left: 70px;
+            }
+        }
+    }
+}
+/* client Section End */
+
+/* workPlan Section Start */
+#work{
+    background-color: #fbfbfb;
+    .container{
+        .work_process{
+            padding: 50px 0px;
+            .title{
+                font-size: 36px;
+                line-height: 40px;
+                font-family: Fira_Medium;
+                padding: 12px 0px;
+                color: #073a59;
+            }
+            .brief{
+                font-size: 16px;
+                line-height: 20px;
+                color: #073a59;
+            }
+        }
+    }
+}
+/* workPlan Section End */
+
+/* request Section Start */
+#request{
+    background-color: #cfae2c;
+    color: #fff;
+    padding: 60px 0px;
+    .container{
+        .req_title{
+            font-size: 30px;
+            line-height: 34px;
+            font-family: Fira_Bold;
+            padding-bottom: 10px;
+        }
+        .req_txt{
+            font-size: 30px;
+            line-height: 36px;
+            padding-bottom: 15px;
+        }
+        .misBtn{
+            background: #fff;
+            color: #cfae2c;
+            text-transform: uppercase;
+            font-family: Fira_semi_bold;
+        }
+    }
+}
+/* request Section End */
+
+/* contact Section start */
+#quote{
+    
+    form{
+        textarea {
+            border: 1px solid #ddd;
+        }
+    }
+    .box{
+        border:  2px dashed #073a59;
+        .upload_title{
+            font-size: 36px;
+            line-height: 40px;
+            font-family: Fira_semi_bold;
+        }
+        .sub_title{
+            font-size: 24px;
+            line-height: 36px;
+            font-family: Fira_Medium;
+
+            .max{
+                color: #2997d4;
+            }
+        }
+        .misBtn{
+            width: 150px;
+            background: rgb(13,73,109);
+            background: linear-gradient(90deg, rgba(13,73,109,1) 0%, rgba(38,143,202,1) 100%);
+            text-transform: uppercase;
+            font-family: Fira_semi_bold;
+        }
+    }
+
+    .misBtn{
+        width: 180px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: Fira_semi_bold;
+        background: rgb(210,179,45);
+        background: linear-gradient(90deg, rgba(210,179,45,1) 0%, rgba(242,233,51,1) 100%);
+    }
+}
+/* contact Section End */
+
+
+
+/*Price section start */
+@import './price';
+/*Price section end */
+/* footer Section Start */
+@import './footer';
+/* footer Section End */
+
