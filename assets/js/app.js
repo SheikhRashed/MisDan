@@ -1,14 +1,18 @@
 // @ts-nocheck
 
+"use-strict";
+
+
+
 
 // Back to top btn
       $(function() {
         var $htmlbody = $('html,body');
            //Top to back
-   $(".top-btm").click(function(){
-    $($htmlbody).animate({
-        "scrollTop" : "0"
-    }, 500);
+      $(".top-btm").click(function(){
+        $($htmlbody).animate({
+            "scrollTop" : "0"
+        }, 500);
 });
 
     //fade in fade out
@@ -82,11 +86,12 @@ $('.client_boxs').slick({
   ]
 });
 
+
 });
+
 
 // Mixit up
 var config = document.querySelector('.filters');
-
 // @ts-ignore
 const mixer = mixitup(config,{
   animation: {
@@ -99,4 +104,12 @@ const mixer = mixitup(config,{
             $('.filters .mix').css({ /*CSS or perhaps logic here to remove gaps*/ });
         }
     }
+});
+
+
+jQuery(document).ready(function($) {
+  $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+  });
 });
