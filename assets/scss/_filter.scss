@@ -39,7 +39,11 @@
             border-radius: 5px;
             font-family: Fira_semi_bold;
             border: 2px solid rgb(210,179,45);
-
+            &:last-child{
+                @media(max-width:1199px) {
+                    margin-top: 10px;
+                }
+            }
             &.mixitup-control-active{
             background: rgb(210,179,45);
             background: linear-gradient(90deg, rgba(210,179,45,1) 0%, rgba(242,233,51,1) 100%);

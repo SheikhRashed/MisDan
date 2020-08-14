@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIS DAN</title>
+    <link rel="icon" href="assets/img/favicon/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="assets/img/favicon/favicon-32x32.png" type="image/gif" sizes="32x32">
+    <link rel="icon" href="assets/img/favicon/android-chrome-512x512.png" type="image/gif" sizes="512x512">
+    <link rel="icon" href="assets/img/favicon/android-chrome-192x192.png" type="image/gif" sizes="192x192">
     <!-- fontawesome -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.6/dist/css/uikit.min.css" />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   
+    <!-- preloader -->
+
     <!-- topbar section start -->
     <div class="" id="topBar">
         <div class="container">
@@ -52,50 +61,49 @@
     <!-- topbar section end -->
   
     <!-- Header section start -->
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo/HomePage--MISDAN-1410px.png" alt="" class="img-fluid">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">about us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">services</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="work.html">works</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="price.html">pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">contact us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">free trail</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-                <button class="btn  my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-              </form>
-            </div>
-        </div>
-      </nav>
-   </header>
-    <!-- Header section end -->
-
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="assets/img/logo/HomePage--MISDAN-1410px.png" alt="" class="img-fluid">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">about us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">services</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="work.html">works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="price.html">pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">free trail</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+                  <button class="btn  my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+          </div>
+        </nav>
+     </header>
+      <!-- Header section end -->
       
     <!-- bg section start -->
    <section id="bg" class="sec-pad">
@@ -140,7 +148,9 @@
         <div class="content">
           <img src="assets/img/work/work_1.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_1.png">print</a>
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +159,9 @@
         <div class="content">
         <img src="assets/img/work/work_2.png" alt="your img missing" class="img-fluid">
         <div class="img_overlay">
-          <div class="misBtn text-center">print</div>
+             <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_2.png">print</a>
+            </div>
         </div>
         </div>
       </div>
@@ -158,7 +170,9 @@
         <div class="content">
           <img src="assets/img/work/work_3.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_3.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -167,7 +181,9 @@
         <div class="content">
           <img src="assets/img/work/work_4.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_4.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -176,7 +192,9 @@
         <div class="content">
           <img src="assets/img/work/work_5.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_5.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -185,7 +203,9 @@
         <div class="content">
           <img src="assets/img/work/work_6.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_6.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -194,7 +214,9 @@
         <div class="content">
           <img src="assets/img/work/work_7.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_7.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -203,7 +225,9 @@
         <div class="content">
           <img src="assets/img/work/work_8.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_8.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -212,7 +236,9 @@
         <div class="content">
           <img src="assets/img/work/work_9.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_9.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -221,7 +247,9 @@
         <div class="content">
           <img src="assets/img/work/work_10.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_10.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -231,7 +259,9 @@
         <div class="content">
           <img src="assets/img/work/work_11.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_11.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -241,7 +271,9 @@
         <div class="content">
           <img src="assets/img/work/work_12.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_12.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -251,7 +283,9 @@
         <div class="content">
           <img src="assets/img/work/work_13.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_13.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -261,7 +295,9 @@
         <div class="content">
           <img src="assets/img/work/work_14.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_14.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -271,7 +307,9 @@
         <div class="content">
           <img src="assets/img/work/work_15.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_15.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -281,7 +319,9 @@
         <div class="content">
           <img src="assets/img/work/work_16.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_16.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -291,7 +331,9 @@
         <div class="content">
           <img src="assets/img/work/work_17.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_17.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -301,7 +343,9 @@
         <div class="content">
           <img src="assets/img/work/work_18.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_18.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -311,7 +355,9 @@
         <div class="content">
           <img src="assets/img/work/work_19.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_19.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -321,7 +367,9 @@
         <div class="content">
           <img src="assets/img/work/work_20.png" alt="your img missing" class="img-fluid">
           <div class="img_overlay">
-            <div class="misBtn text-center">print</div>
+               <div uk-lightbox="animation: slide">
+              <a class="misBtn text-center uk-button uk-button-default" data-caption="Img"  href="assets/img/work/work_20.png">print</a>
+            </div>
           </div>
           </div>
       </div>
@@ -385,7 +433,7 @@
              <li><a href="contact.html">Contact us</a></li>
            </ul>
          </div>
-         <div class="col-md-3 col-6">
+         <div class="col-md-3 col-12">
            <ul class="head">
              <li class="title mb-3">Services</li>
              <li><a href="#">image processing</a></li>
@@ -404,7 +452,7 @@
              </ul>
            </div>
          </div>
-         <div class="col-md-3 col-6 flex">
+         <div class="col-md-3 col-12 my-5 my-sm-0 flex">
            <div class="head">
              <div class="title mb-3">Newsletter</div>
 
@@ -431,12 +479,18 @@
       </div>
     </footer>
     <!-- footer section end -->
-
+    <div class="top-btm">
+      <i class="fas fa-chevron-up"></i>
+    </div>
     <!-- Script tage goes here -->
-    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="assets/js/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/mixitup.min.js"></script>
+     <!-- UIkit JS -->
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.6/dist/js/uikit.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.6/dist/js/uikit-icons.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

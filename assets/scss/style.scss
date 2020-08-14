@@ -20,9 +20,13 @@
         .abt-txt{
             font-size: 24px;
             line-height: 36px;
+            text-align: justify;
+            @media(max-width:1200px) {
+
+            }
             @media (max-width: 767px) {
               margin: 18px 0px !important;
-              text-align: left;
+            //   text-align: left;
             }
         }
         .abt_img{
@@ -58,6 +62,16 @@
                     }
                 }
             }
+            iframe{
+               @media(max-width: 575px) {
+                width: 400px;
+                padding: 0px 8px;
+               }
+               @media(max-width: 480px) {
+                width: 300px;
+                padding: 0px 8px;
+               }
+            }
         }
     }
 }
@@ -82,15 +96,16 @@
 /* about Section End */
 
 /* Services Section Start */
-#service{
+// #service{
 
-    .service_bg_img{
-        background: url('../img/service/HomePage--MISDAN-1410px.png') center center/cover no-repeat;
-        // padding: 120px;
-        height: 450px;
-    }
+//     .service_bg_img{
+//         // background: url('../img/service/HomePage--MISDAN-1410px.png') center center/cover no-repeat;
+//         // padding: 120px;
+//         height: 450px;
+//     }
 
-}
+// }
+
 #services{
 
     position: relative;
@@ -99,13 +114,14 @@
         height: 440px;
         display: flex;
         align-items: center;
-        // overflow: hidden;
-       
+       @media(max-width: 480px) {
+          height: auto; 
+          margin: 20px 0px;
+       }
         &.img_pro{
             background: url('../img/service/HomePage--MISDAN-1410px.png') right no-repeat;
            
             @media(max-width:1024px) {
-                // background-position: 345% !important;
             }
         }
         &.graphics_pro{
@@ -206,12 +222,13 @@
                 @media(max-width:1024px){
                     background-size: 275px;
                 }
-                @media(max-width: 576px) {
-                    background-size: 180px;
+                @media(max-width: 575px) {
+                   background: none;
                 }
-                @media(max-width: 480px) {
-                    background-size: 150px;
-                }
+                // @media(max-width: 480px) {
+                //     background-size: 150px;
+                // }
+               
             }
     
            .s-box{
@@ -230,9 +247,11 @@
                 .txt{
                     font-size: 24px;
                     line-height: 36px;
+                    text-align: justify;
                     @media(max-width:767px) {
                         font-size: 14px;
                         line-height: 24px;
+                        // text-align: left;
                     }
                 }
                 .img_content{
@@ -334,19 +353,29 @@
 #client{
     .container{
         .client_boxs{
-          display: grid;
-          grid-template-columns: repeat(2,1fr);
-          gap: 80px 90px;
-          margin-top: 60px;
+            margin: 60px 0px;
+            overflow: visible !important;
+            // padding: 90px 0px;
+        //   display: grid;
+        //   grid-template-columns: repeat(2,1fr);
+        //   gap: 80px 90px;
+        //   margin-top: 60px;
+            // margin: 30px;
           @media (max-width: 767px) {
-              grid-template-columns: 1fr;
+            //   grid-template-columns: 1fr;
           }
             .cmnt_box{
                 position: relative;
                 background-color: #fdf9ed;
-                padding: 26px 12px;
                 border-radius: 25px;
-                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+                // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+                padding: 70px 10px;
+              
+              
+                // width: 50%;
+                margin: auto;
+                margin: 0px 20px;
+                overflow: visible;
                 .name-rating{
 
                     .name{
@@ -382,9 +411,25 @@
 
             .comment_icon{
                 position: absolute;
-                top: -55px;
-                left: 70px;
+                top: 10px;
+                overflow: visible;
+                left: 10%;
+                @media(max-width: 575px) {
+                    left: 10%;
+                }
+                @media(min-width: 320px) and(max-width:480px) {
+                    left: 18%;
+                }
             }
+        }
+    }
+    .slick-dots{
+        top: 350px;
+        @media(max-width: 1200px) {
+            top: 380px;
+        }
+        @media(max-width: 412px) {
+            top: 410px;
         }
     }
 }
@@ -483,6 +528,41 @@
     }
 }
 /* contact Section End */
+
+// Counter
+
+.counter_inner{
+    justify-content: center;
+}
+
+.counter-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    color: #fff;
+    i{
+        font-size: 30px;
+    }
+    .count {
+        padding: 8px 0px;
+        span{
+            font-size: 48px;
+            font-family: Fira_Bold;
+        }
+       
+    }
+    .counter_title{
+        font-size: 22px !important;
+        font-family: Fira_Medium;
+        text-transform: capitalize;
+    }
+}
+
 
 
 

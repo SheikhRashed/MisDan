@@ -98,6 +98,9 @@ footer{
         .bottom{
             border-top: 1px solid #ddd;
             padding: 16px;
+            @media (max-width: 480px) {
+                padding: 8px;
+            }
             .policy{
                 display: flex;
                 align-items: center;
@@ -107,11 +110,16 @@ footer{
                 }
                 li{
                     margin: 0px 20px;
+                      @media(max-width: 480px) {
+                            margin: 0px 6px;
+                        }
                     &:first-child{
                         margin-left: 0px;
                     }
                     a{
                         color: #fff;
+                        font-size: 14px;
+                      
                         &:hover{
                             text-decoration: underline;
                         }

@@ -63,7 +63,7 @@
                         line-height: 36px;
                         margin: 0;
                         @media(max-width: 576px) {
-                            font-size: 18px;
+                            font-size: 16px;
                         }
                     }
                 }
@@ -111,18 +111,13 @@
 
                 }
 
-                &:last-child{
-                    a{
-                        // .misBtn{
-                           
-                        //     &:hover{
-                        //         background: #fff;
-                        //         color: #d4b62d;
-                        //     }
-                        // }
-                    }
-                }
             }
         }
+    }
+    .misBtn{
+       @media(max-width: 480px) {
+        font-size: 9px;
+        line-height: 12px;
+       }
     }
 }
