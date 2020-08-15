@@ -63,9 +63,13 @@ body{
     font-family: Fira_Regular;
     text-transform: capitalize;
 }
+.custom-select {
+    background: none !important;
+   
+}
 
 .container{
-    // max-width: 1440px;   
+   
     @media (min-width:1400px) {
         max-width: 1440px;   
     }

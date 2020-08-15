@@ -123,6 +123,10 @@ body {
   text-transform: capitalize;
 }
 
+.custom-select {
+  background: none !important;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1440px;
@@ -483,7 +487,13 @@ header {
 
 header .navbar .container .navbar-collapse .navbar-nav .nav-item {
   position: relative;
-  margin: 0px 8px;
+  margin: 0px 12px;
+}
+
+@media (max-width: 1600px) {
+  header .navbar .container .navbar-collapse .navbar-nav .nav-item {
+    margin: 0px 2px;
+  }
 }
 
 header .navbar .container .navbar-collapse .navbar-nav .nav-item::after {
