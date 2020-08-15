@@ -116,6 +116,10 @@ button, button:hover,
   }
 }
 
+ol, ul {
+  padding-left: 0px !important;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -683,7 +687,7 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
 #banner .container .slide_banner div .bnnr_txt .btns {
   margin-top: 30px;
   margin-bottom: 20px;
-  margin-left: -25px;
+  margin-left: -5px;
 }
 
 #banner .container .slide_banner div .bnnr_txt .btns li {
@@ -811,7 +815,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
 }
 
 /* about Section End */
-/* Services Section Start */
 #services {
   position: relative;
 }
@@ -962,19 +965,7 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
 }
 
 #services .service_slider .service_box.bg_size {
-  background-size: 520px;
-}
-
-@media (min-width: 1600px) {
-  #services .service_slider .service_box.bg_size {
-    background-size: 650px;
-  }
-}
-
-@media (max-width: 1200px) {
-  #services .service_slider .service_box.bg_size {
-    background-size: 450px;
-  }
+  background-size: 370px;
 }
 
 @media (max-width: 1024px) {
@@ -1011,9 +1002,9 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   text-align: justify;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #services .service_slider .service_box .s-box .txt {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
   }
 }
@@ -1058,7 +1049,7 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #services .slick-dots {
-    left: -10%;
+    left: -2%;
   }
 }
 

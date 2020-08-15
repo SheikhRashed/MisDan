@@ -96,16 +96,6 @@
 }
 /* about Section End */
 
-/* Services Section Start */
-// #service{
-
-//     .service_bg_img{
-//         // background: url('../img/service/HomePage--MISDAN-1410px.png') center center/cover no-repeat;
-//         // padding: 120px;
-//         height: 450px;
-//     }
-
-// }
 
 #services{
 
@@ -215,24 +205,14 @@
                 background: url('../img/service/service_4_h.png') right no-repeat;
             }
             &.bg_size{
-                background-size: 520px;
-
-                @media(min-width:1600px) {
-                    background-size: 650px;
-                }
-                @media(max-width:1200px) {
-                    background-size: 450px;
-                }
+                background-size: 370px;
                 @media(max-width:1024px){
                     background-size: 275px;
                 }
                 @media(max-width: 575px) {
                    background: none;
                 }
-                // @media(max-width: 480px) {
-                //     background-size: 150px;
-                // }
-               
+              
             }
     
            .s-box{
@@ -252,8 +232,8 @@
                     font-size: 24px;
                     line-height: 36px;
                     text-align: justify;
-                    @media(max-width:767px) {
-                        font-size: 14px;
+                    @media(max-width:768px) {
+                        font-size: 18px;
                         line-height: 24px;
                         // text-align: left;
                     }
@@ -286,7 +266,7 @@
         left: 0%;
         transform: translate(50%,-50%);
         @media(min-width: 320px) and (max-width: 480px) {
-            left: -10%
+            left: -2%
         }
         li{
             margin: 10px 0px;

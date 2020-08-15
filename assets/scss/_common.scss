@@ -58,6 +58,9 @@ button,
     align-items: center;
    }
 }
+ol,ul{
+    padding-left: 0px !important;
+}
 body{
     box-sizing: border-box;
     font-family: Fira_Regular;
