@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <!-- animate css -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+   />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -18,17 +23,18 @@
     <div class="" id="topBar">
         <div class="container">
             <div class="bar_content">
-                <div class="columnOne cols">
+                <div class="columnOne cols animate__animated animate__bounce">
                     <span class="mail"><i class="fas fa-envelope"></i> info@misdangraphics.com</span>
 
                     <span class="phn"><i class="fas fa-phone-volume"></i> +1 (502) 379-5734</span>
                 </div>
                 <div class="columnTwo cols">
-                     <ul class="socialIcon">
-                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                     <ul class="socialIcon ">
+                         <li><a href="#"><i class="fab fa-facebook-f animate__animated animate__tada"></i></a></li>
+                         <li><a href="#"><i class="fab fa-twitter animate__animated animate__tada"></i></a></li>
+                         <li><a href="#"><i class="fab fa-instagram animate__animated animate__tada"></i></i></a></li>
+                         <li><a href="#"><i class="fab fa-google-plus-g animate__animated animate__tada"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in animate__animated animate__tada"></i></a></li>
                      </ul>
                      <div class="drop_user">
                          <span class="user"><i class="fas fa-user-circle"></i></span>
@@ -56,7 +62,7 @@
     <header>
       <nav class="navbar navbar-expand-xl navbar-light bg-light">
           <div class="container">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                   <img src="assets/img/logo/HomePage--MISDAN-1410px.png" alt="" class="img-fluid">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +90,7 @@
                     <a class="nav-link" href="contact.html">contact us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">free trail</a>
+                    <a class="nav-link" href="contact.html">free trail</a>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -114,7 +120,7 @@
       <div class="container">
         <div class="row section-head">
          <div class="sec-title bar text-center">
-           <h2 class="title">get your quote</h2>
+           <h2 class="title animate__animated animate__rubberBand">get your quote</h2>
            <img src="assets/img/bar.png" alt="bar">
            <div class="sub_title">Please fill out the form with your requirements. We will get back to you soon</div>
          </div>
@@ -141,17 +147,30 @@
               <div class="form-group">
                 <select class="custom-select" id="service">
                   <option selected>Service You Require*</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option value="1">Image Processing</option>
+                  <option value="2">Graphics Solution</option>
+                  <option value="3">Web UI & Development</option>
+                  <option value="4">Video Processing</option>
                 </select>
               </div>
               <div class="form-group">
+                
                 <select class="custom-select" id="country">
                   <option selected>Country*</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option value="1">USA</option>
+                  <option value="2">Bangladesh</option>
+                  <option value="3">India</option>
+                  <option value="4">Pakistan</option>
+                  <option value="5">UK</option>
+                  <option value="6">Dubai</option>
+                  <option value="7">Australia</option>
+                  <option value="8">Germany</option>
+                  <option value="9">Italy</option>
+                  <option value="10">Brazil</option>
+                  <option value="11">Peru</option>
+                  <option value="12">Afghanistan</option>
+                  <option value="13">Nigeria</option>
+                  <option value="14">Africa</option>
                 </select>
               </div>
               <div class="form-group">
@@ -166,10 +185,10 @@
             <p class="sub_title">File will uploading when you click on submit button. <span class="max">(Max 200MB)</span> </p>
             <form>
              
-             <button class="misBtn my-3">Upload</button>
+             <button class="misBtn my-3 animate__animated animate__bounceIn">Upload</button>
             </form>
            </div>
-           <button type="submit" class="misBtn mx-auto mt-5">Submit</button>
+           <button type="submit" class="misBtn mx-auto mt-5 animate__animated animate__bounceIn">Submit</button>
           </div>
         </div>
       </div>
@@ -178,11 +197,12 @@
     <div class="top-btm">
       <i class="fas fa-chevron-up"></i>
     </div>
+
     <!-- footer section start -->
     <footer>
       <div class="container">
        <div class="row top">
-         <div class="col-md-3 col-6">
+         <div class="col-lg-3 col-6 mb-md-5 mb-lg-0">
            <div class="brand_logo">
              <img src="assets/img/logo/logo_2.png" alt="logo" class="img-fluid">
            </div>
@@ -192,14 +212,15 @@
              <span class="txt d-block">info@misdangraphics.com</span>
              <span class="txt d-block">Phone: 5024342541</span>
            </div>
-           <ul class="socialIcon">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+           <ul class="socialIcon pl-0">
+            <li><a href="#"><i class="fab fa-facebook-f animate__animated animate__tada"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter animate__animated animate__tada"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram animate__animated animate__tada"></i></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g animate__animated animate__tada"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in animate__animated animate__tada"></i></a></li>
         </ul>
          </div>
-         <div class="col-md-3 col-6 flex">
+         <div class="col-lg-3 col-6 flex ">
            <ul class="head ">
              <li class="title mb-3">Menu</li>
              <li><a href="index.html">Home</a></li>
@@ -210,18 +231,18 @@
              <li><a href="contact.html">Contact us</a></li>
            </ul>
          </div>
-         <div class="col-md-3 col-12">
-           <ul class="head">
+         <div class="col-lg-3 col-sm-6">
+           <ul class="head pl-0">
              <li class="title mb-3">Services</li>
-             <li><a href="#">image processing</a></li>
-             <li><a href="#">graphics Solution </a></li>
-             <li><a href="#">Web ui & mockups</a></li>
-             <li><a href="#">web design & development</a></li>
-             <li><a href="#">Video Processing</a></li>
+             <li><a href="service.html#imageProcessing">image processing</a></li>
+             <li><a href="service.html#GraphicsSolution">graphics Solution </a></li>
+             <li><a href="service.html#webUI">Web ui & mockups</a></li>
+             <li><a href="service.html#webUI">web design & development</a></li>
+             <li><a href="service.html#VideoProcessing">Video Processing</a></li>
            </ul>
            <div class="head my-3">
              <div class="title mb-4">We Accept</div>
-             <ul class="payment_system">
+             <ul class="payment_system pl-0">
                <li><a href="#"><img src="assets/img/card/paypal.png" alt="paypal"></a></li>
                <li><a href="#"><img src="assets/img/card/dollar.png" alt="dollar"></a></li>
                <li><a href="#"><img src="assets/img/card/zelle.png" alt="zelle"></a></li>
@@ -229,7 +250,7 @@
              </ul>
            </div>
          </div>
-         <div class="col-md-3 col-12 my-5 my-sm-0 flex">
+         <div class="col-lg-3 col-sm-6 my-5 my-sm-0 flex">
            <div class="head">
              <div class="title mb-3">Newsletter</div>
 
@@ -256,6 +277,7 @@
       </div>
     </footer>
     <!-- footer section end -->
+
 
     <!-- Script tage goes here -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>

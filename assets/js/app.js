@@ -1,9 +1,5 @@
 // @ts-nocheck
 
-"use-strict";
-
-
-
 
 // Back to top btn
       $(function() {

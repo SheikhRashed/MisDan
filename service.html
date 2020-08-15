@@ -12,7 +12,11 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- Bootstrap -->
-   
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -27,17 +31,18 @@
     <div class="" id="topBar">
         <div class="container">
             <div class="bar_content">
-                <div class="columnOne cols">
+                <div class="columnOne cols animate__animated animate__bounce">
                     <span class="mail"><i class="fas fa-envelope"></i> info@misdangraphics.com</span>
 
                     <span class="phn"><i class="fas fa-phone-volume"></i> +1 (502) 379-5734</span>
                 </div>
                 <div class="columnTwo cols">
                      <ul class="socialIcon">
-                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook-f animate__animated animate__tada"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter animate__animated animate__tada"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram animate__animated animate__tada"></i></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus-g animate__animated animate__tada"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin-in animate__animated animate__tada"></i></a></li>
                      </ul>
                      <div class="drop_user">
                          <span class="user"><i class="fas fa-user-circle"></i></span>
@@ -65,7 +70,7 @@
     <header>
       <nav class="navbar navbar-expand-xl navbar-light bg-light">
           <div class="container">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                   <img src="assets/img/logo/HomePage--MISDAN-1410px.png" alt="" class="img-fluid">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +98,7 @@
                     <a class="nav-link" href="contact.html">contact us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">free trail</a>
+                    <a class="nav-link" href="contact.html">free trail</a>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -120,20 +125,20 @@
 
   
     <!-- Service section start -->
-    <section id="services" class="sec-pad">
+    <section id="services" class="sec-pad ">
       <div class="container">
         <div class="row section-head mb-5">
          <div class="sec-title bar text-center">
-           <h2 class="title">services</h2>
+           <h2 class="title animate__animated animate__rubberBand">services</h2>
            <img src="assets/img/bar.png" alt="bar">
          </div>
         </div>
       </div>
-        <div class="our_service img_pro bg_size">
+        <div class="our_service img_pro bg_size my-5 py-5">
           <div class="container">
            <div class="row s-box">
              <div class="col-md-6 order-2 order-md-0">
-               <h3 class="title">Image Processing</h3>
+               <h3 class="title" id="imageProcessing">Image Processing</h3>
                <p class="txt">MisDan is a professional Graphics design Company. We provide photoshop work, background removing, transparent background, white background, Image retouch, object remove or add, color correction, path, masking and so on.</p>
              </div>
              <div class="col-md-6  order-1 order-md-0 img_content right">
@@ -143,12 +148,12 @@
           </div>
          </div>
 
-         <div class="our_service graphics_pro bg_size">
+         <div class="our_service graphics_pro bg_size my-5 py-5">
           <div class="container">
            <div class="row s-box">
              <div class="col-md-6"></div>
              <div class="col-md-6 order-2 order-md-0">
-               <h3 class="title">Graphics Solution</h3>
+               <h3 class="title" id="GraphicsSolution">Graphics Solution</h3>
                <p class="txt">
                 MisDan is a professional Graphics company and provide illustrator work, logo design, book cover, flyer, banner, google ads, social media ads, social media cover, festival flyer, church flyer, Christmas flyer, new year flyer, brochure, company profile, menu design, leaflet, greetings card, thank you card, business card ans much more.  
                </p>
@@ -161,11 +166,11 @@
           </div>
          </div>  
 
-         <div class="our_service web_pro bg_size">
+         <div class="our_service web_pro bg_size my-5 py-5">
           <div class="container">
            <div class="row s-box">
              <div class="col-md-6 order-2 order-md-0">
-               <h3 class="title">Web UI & Development</h3>
+               <h3 class="title" id="webUI">Web UI & Development</h3>
                <p class="txt">
                  MisDan have an all-out solution to website design for the best experience. A bunch of talented minds are working delicately to offer an attractive, dynamic as well as user-friendly website. We are starting from a complete UI to Development a site. 
                </p>
@@ -177,12 +182,12 @@
           </div>
          </div>
 
-         <div class="our_service video_pro bg_size">
+         <div class="our_service video_pro bg_size my-5 py-5">
           <div class="container">
            <div class="row s-box">
              <div class="col-md-6"></div>
              <div class="col-md-6 order-2 order-md-0">
-               <h3 class="title">Video Processing</h3>
+               <h3 class="title" id="VideoProcessing">Video Processing</h3>
                <p class="txt">
                  MisDan served with intro video, white bpoard presentation, motion graphics, tvc short ads, cartoon animation
                  and so on.   
@@ -207,7 +212,7 @@
         </div>
         <div class="col-12 text-center">
           <h4 class="req_txt">Submit your request now !</h4>
-            <a href="price.html" class="misBtn">Check Pricing</a>
+            <a href="price.html" class="misBtn animate__animated animate__bounceIn">Check Pricing</a>
         </div>
       </div>
     </div>
@@ -218,7 +223,7 @@
     <footer>
       <div class="container">
        <div class="row top">
-         <div class="col-md-3 col-6">
+         <div class="col-lg-3 col-6 mb-md-5 mb-lg-0">
            <div class="brand_logo">
              <img src="assets/img/logo/logo_2.png" alt="logo" class="img-fluid">
            </div>
@@ -228,14 +233,15 @@
              <span class="txt d-block">info@misdangraphics.com</span>
              <span class="txt d-block">Phone: 5024342541</span>
            </div>
-           <ul class="socialIcon">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+           <ul class="socialIcon pl-0">
+            <li><a href="#"><i class="fab fa-facebook-f animate__animated animate__tada"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter animate__animated animate__tada"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram animate__animated animate__tada"></i></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g animate__animated animate__tada"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in animate__animated animate__tada"></i></a></li>
         </ul>
          </div>
-         <div class="col-md-3 col-6 flex">
+         <div class="col-lg-3 col-6 flex ">
            <ul class="head ">
              <li class="title mb-3">Menu</li>
              <li><a href="index.html">Home</a></li>
@@ -246,18 +252,18 @@
              <li><a href="contact.html">Contact us</a></li>
            </ul>
          </div>
-         <div class="col-md-3 col-12">
-           <ul class="head">
+         <div class="col-lg-3 col-sm-6">
+           <ul class="head pl-0">
              <li class="title mb-3">Services</li>
-             <li><a href="#">image processing</a></li>
-             <li><a href="#">graphics Solution </a></li>
-             <li><a href="#">Web ui & mockups</a></li>
-             <li><a href="#">web design & development</a></li>
-             <li><a href="#">Video Processing</a></li>
+             <li><a href="#imageProcessing">image processing</a></li>
+             <li><a href="#GraphicsSolution">graphics Solution </a></li>
+             <li><a href="#webUI">Web ui & mockups</a></li>
+             <li><a href="#webUI">web design & development</a></li>
+             <li><a href="#VideoProcessing">Video Processing</a></li>
            </ul>
            <div class="head my-3">
              <div class="title mb-4">We Accept</div>
-             <ul class="payment_system">
+             <ul class="payment_system pl-0">
                <li><a href="#"><img src="assets/img/card/paypal.png" alt="paypal"></a></li>
                <li><a href="#"><img src="assets/img/card/dollar.png" alt="dollar"></a></li>
                <li><a href="#"><img src="assets/img/card/zelle.png" alt="zelle"></a></li>
@@ -265,14 +271,14 @@
              </ul>
            </div>
          </div>
-         <div class="col-md-3 col-12 my-5 my-sm-0 flex">
+         <div class="col-lg-3 col-sm-6 my-5 my-sm-0 flex">
            <div class="head">
              <div class="title mb-3">Newsletter</div>
 
              <div class="input_grp">
                <input type="text" id="name" placeholder="Your Name">
                <input type="email" name="email" id="email" placeholder="Your Mail">
-               <button type="submit" class="d-block misBtn">Subscribe</button>
+               <button type="submit" class="d-block misBtn animate__animated animate__bounceIn">Subscribe</button>
              </div>
            </div>
          </div>
@@ -292,6 +298,8 @@
       </div>
     </footer>
     <!-- footer section end -->
+
+
     <div class="top-btm">
       <i class="fas fa-chevron-up"></i>
     </div>
