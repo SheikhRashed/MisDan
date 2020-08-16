@@ -205,7 +205,7 @@
                 background: url('../img/service/service_4_h.png') right no-repeat;
             }
             &.bg_size{
-                background-size: 370px;
+                background-size: 400px;
                 @media(max-width:1024px){
                     background-size: 275px;
                 }
@@ -434,6 +434,11 @@
                 font-family: Fira_Medium;
                 padding: 12px 0px;
                 color: #073a59;
+                text-transform: capitalize;
+                @media(max-width: 1400px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
             }
             .brief{
                 font-size: 16px;
