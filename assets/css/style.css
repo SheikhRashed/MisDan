@@ -59,7 +59,8 @@
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   margin-bottom: 0px;
 }
@@ -72,7 +73,12 @@ a, a:hover, a:focus {
   padding-right: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
@@ -107,7 +113,8 @@ button, button:hover,
   }
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 0px !important;
 }
 
@@ -514,7 +521,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   color: #fff;
 }
 
-/* banner Section Start */
 #banner {
   background: #1d4b67;
   background: linear-gradient(0deg, #1d4b67 29%, #06273c 91%);
@@ -623,8 +629,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   border: 1px solid #f2e933;
 }
 
-/* banner Section End */
-/* about Section Start */
 #about {
   position: relative;
 }
@@ -716,7 +720,152 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   color: #073a59;
 }
 
-/* about Section End */
+#gallery {
+  background-color: #f4fbff;
+}
+
+#gallery .container .filters .mix .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#gallery .container .filters .mix .content .img_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #cfae2c98;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  visibility: hidden;
+}
+
+#gallery .container .filters .mix .content .img_overlay .misBtn {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  padding: 5px;
+  cursor: pointer;
+  background: #0d496d;
+  background: linear-gradient(90deg, #0d496d 0%, #268fca 100%);
+}
+
+#gallery .container .filters .mix .content:hover .img_overlay {
+  visibility: visible;
+}
+
+#gallery .container .misBtn {
+  text-transform: uppercase;
+  font-family: Fira_Bold;
+  background: #d2b32d;
+  background: linear-gradient(90deg, #d2b32d 0%, #f2e933 100%);
+}
+
+.mix {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1rem;
+  position: relative;
+  backface-visibility: hidden;
+  /* prevents flicker in chrome */
+  will-change: transform, opacity;
+  /* prevents flicker in safari */
+}
+
+.mix:before {
+  content: '';
+  display: inline-block;
+}
+
+.filters {
+  padding: 1rem;
+  column-count: 5;
+}
+
+.gallery {
+  margin: 60px 0px;
+}
+
+.gallery .controls {
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.gallery .controls button,
+.gallery .controls .btn:hover,
+.gallery .controls .btn:active,
+.gallery .controls .btn:focus {
+  margin: 0px 12px;
+  padding: 6px 20px;
+  text-transform: uppercase;
+  color: #073a59;
+  border-radius: 5px;
+  font-family: Fira_semi_bold;
+  border: 2px solid #d2b32d;
+}
+
+@media (max-width: 1199px) {
+  .gallery .controls button:last-child,
+  .gallery .controls .btn:last-child:hover,
+  .gallery .controls .btn:last-child:active,
+  .gallery .controls .btn:last-child:focus {
+    margin-top: 10px;
+  }
+}
+
+.gallery .controls button.mixitup-control-active,
+.gallery .controls .mixitup-control-active.btn:hover,
+.gallery .controls .mixitup-control-active.btn:active,
+.gallery .controls .mixitup-control-active.btn:focus {
+  background: #d2b32d;
+  background: linear-gradient(90deg, #d2b32d 0%, #f2e933 100%);
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .gallery .controls button,
+  .gallery .controls .btn:hover,
+  .gallery .controls .btn:active,
+  .gallery .controls .btn:focus {
+    margin: 6px 0px;
+  }
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+/* 2 Columns */
+@media screen and (min-width: 320px) {
+  .filters {
+    column-count: 2;
+  }
+}
+
+/* 3 Columns */
+@media screen and (min-width: 541px) {
+  .filters {
+    column-count: 3;
+  }
+}
+
+/* 4 Columns */
+@media screen and (min-width: 961px) {
+  .filters {
+    column-count: 4;
+  }
+}
+
+/* 5 Columns */
+@media screen and (min-width: 1281px) {
+  .filters {
+    column-count: 5;
+  }
+}
+
 #services {
   position: relative;
 }
@@ -938,156 +1087,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   margin: 10px 0px;
 }
 
-/* Services Section End */
-/* gallery Section Start */
-#gallery {
-  background-color: #f4fbff;
-}
-
-#gallery .container .filters .mix .content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#gallery .container .filters .mix .content .img_overlay {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #cfae2c98;
-  overflow: hidden;
-  transition: all 0.2s linear;
-  visibility: hidden;
-}
-
-#gallery .container .filters .mix .content .img_overlay .misBtn {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  width: 50%;
-  padding: 5px;
-  cursor: pointer;
-  background: #0d496d;
-  background: linear-gradient(90deg, #0d496d 0%, #268fca 100%);
-}
-
-#gallery .container .filters .mix .content:hover .img_overlay {
-  visibility: visible;
-}
-
-#gallery .container .misBtn {
-  text-transform: uppercase;
-  font-family: Fira_Bold;
-  background: #d2b32d;
-  background: linear-gradient(90deg, #d2b32d 0%, #f2e933 100%);
-}
-
-.mix {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 1rem;
-  position: relative;
-  backface-visibility: hidden;
-  /* prevents flicker in chrome */
-  will-change: transform, opacity;
-  /* prevents flicker in safari */
-}
-
-.mix:before {
-  content: '';
-  display: inline-block;
-}
-
-.filters {
-  padding: 1rem;
-  column-count: 5;
-}
-
-.gallery {
-  margin: 60px 0px;
-}
-
-.gallery .controls {
-  justify-content: space-between;
-  margin: 0px;
-}
-
-.gallery .controls button,
-.gallery .controls .btn:hover,
-.gallery .controls .btn:active,
-.gallery .controls .btn:focus {
-  margin: 0px 12px;
-  padding: 6px 20px;
-  text-transform: uppercase;
-  color: #073a59;
-  border-radius: 5px;
-  font-family: Fira_semi_bold;
-  border: 2px solid #d2b32d;
-}
-
-@media (max-width: 1199px) {
-  .gallery .controls button:last-child,
-  .gallery .controls .btn:last-child:hover,
-  .gallery .controls .btn:last-child:active,
-  .gallery .controls .btn:last-child:focus {
-    margin-top: 10px;
-  }
-}
-
-.gallery .controls button.mixitup-control-active,
-.gallery .controls .mixitup-control-active.btn:hover,
-.gallery .controls .mixitup-control-active.btn:active,
-.gallery .controls .mixitup-control-active.btn:focus {
-  background: #d2b32d;
-  background: linear-gradient(90deg, #d2b32d 0%, #f2e933 100%);
-  color: #fff;
-  border: none;
-}
-
-@media (max-width: 991px) {
-  .gallery .controls button,
-  .gallery .controls .btn:hover,
-  .gallery .controls .btn:active,
-  .gallery .controls .btn:focus {
-    margin: 6px 0px;
-  }
-}
-
-/* Grid Breakpoints
----------------------------------------------------------------------- */
-/* 2 Columns */
-@media screen and (min-width: 320px) {
-  .filters {
-    column-count: 2;
-  }
-}
-
-/* 3 Columns */
-@media screen and (min-width: 541px) {
-  .filters {
-    column-count: 3;
-  }
-}
-
-/* 4 Columns */
-@media screen and (min-width: 961px) {
-  .filters {
-    column-count: 4;
-  }
-}
-
-/* 5 Columns */
-@media screen and (min-width: 1281px) {
-  .filters {
-    column-count: 5;
-  }
-}
-
-/* gallery Section End */
-/* client Section Start */
 #client .container .client_boxs {
   margin: 60px 0px;
   overflow: visible !important;
@@ -1171,8 +1170,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   }
 }
 
-/* client Section End */
-/* workPlan Section Start */
 #work {
   background-color: #fbfbfb;
 }
@@ -1203,8 +1200,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   color: #073a59;
 }
 
-/* workPlan Section End */
-/* request Section Start */
 #request {
   background-color: #cfae2c;
   color: #fff;
@@ -1247,8 +1242,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   font-family: Fira_semi_bold;
 }
 
-/* request Section End */
-/* contact Section start */
 #quote form textarea {
   border: 1px solid #ddd;
 }
@@ -1290,7 +1283,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   background: linear-gradient(90deg, #d2b32d 0%, #f2e933 100%);
 }
 
-/* contact Section End */
 .counter_inner {
   justify-content: center;
 }
@@ -1326,7 +1318,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   text-transform: capitalize;
 }
 
-/*Price section start */
 #price .container .price_container .col-8 {
   padding: 0 !important;
   padding-right: 4px !important;
@@ -1446,8 +1437,6 @@ header .navbar .container .navbar-collapse .form-inline .btn:hover {
   }
 }
 
-/*Price section end */
-/* footer Section Start */
 footer {
   background: url("../img/footer/footer_bg.png") center center/cover no-repeat;
   position: relative;
@@ -1623,6 +1612,4 @@ footer .container .bottom .policy li a {
 footer .container .bottom .policy li a:hover {
   text-decoration: underline;
 }
-
-/* footer Section End */
 /*# sourceMappingURL=style.css.map */

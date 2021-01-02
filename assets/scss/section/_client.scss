@@ -1,0 +1,81 @@
+#client {
+    .container {
+        .client_boxs {
+            margin: 60px 0px;
+            overflow: visible !important;
+            // padding: 90px 0px;
+            //   display: grid;
+            //   grid-template-columns: repeat(2,1fr);
+            //   gap: 80px 90px;
+            //   margin-top: 60px;
+            // margin: 30px;
+            @media (max-width: 767px) {
+                //   grid-template-columns: 1fr;
+            }
+            .cmnt_box {
+                position: relative;
+                background-color: #fdf9ed;
+                border-radius: 25px;
+                // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+                padding: 70px 10px;
+
+                // width: 50%;
+                margin: auto;
+                margin: 0px 20px;
+                overflow: visible;
+                .name-rating {
+                    .name {
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #073a59;
+                        margin-bottom: 0px;
+                    }
+                    .date {
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #073a59;
+                    }
+                    .star {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-end;
+                        margin-top: 5px;
+                    }
+                }
+                .client_feed {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #073a59;
+                }
+                .read-more {
+                    color: #073a59;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: bold;
+                }
+            }
+
+            .comment_icon {
+                position: absolute;
+                top: 10px;
+                overflow: visible;
+                left: 10%;
+                @media (max-width: 575px) {
+                    left: 10%;
+                }
+                @media (min-width: 320px) and(max-width:480px) {
+                    left: 18%;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        top: 350px;
+        @media (max-width: 1200px) {
+            top: 380px;
+        }
+        @media (max-width: 412px) {
+            top: 410px;
+        }
+    }
+}

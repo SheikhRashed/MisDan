@@ -1,111 +1,104 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul,ol{
+ul,
+ol {
     list-style: none;
     margin-bottom: 0px;
 }
-a{
+a {
     text-decoration: none;
-    &:hover{
+    &:hover {
         @extend a;
     }
-    &:focus{
+    &:focus {
         @extend a;
     }
-
 }
 
-.pr_50{
+.pr_50 {
     padding-right: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
-p{
+p {
     margin: 0 !important;
     padding: 0 !important;
 }
 button,
-.btn{
+.btn {
     border: none;
     outline: none;
-    &:hover{
+    &:hover {
         @extend button;
     }
-    &:active{
+    &:active {
         @extend button;
     }
-    &:focus{
+    &:focus {
         @extend button;
     }
-   
 }
-.slick-slide{
+.slick-slide {
     outline: none;
 }
-.d_center{
+.d_center {
     display: flex;
     justify-content: center;
 }
-.d_align_center{
-   @media(max-width: 1200px) {
-    display: flex;
-    align-items: center;
-   }
+.d_align_center {
+    @media (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
-ol,ul{
+ol,
+ul {
     padding-left: 0px !important;
 }
-body{
+body {
     box-sizing: border-box;
     font-family: Fira_Regular;
     text-transform: capitalize;
 }
 .custom-select {
     background: none !important;
-   
 }
 
-.container{
-   
-    @media (min-width:1400px) {
-        max-width: 1440px;   
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1440px;
     }
 }
-// .container{
-//     max-width: 1440px;   
-//     @media (max-width:1200px) {
-//         width: 95%;
-//     }
-// }
-// Navbar toggler
-
-.navbar-toggler{
+.navbar-toggler {
     background-color: #073a59c7;
     color: #fff;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
     padding: 6px 12px;
-    i{
+    i {
         font-size: 24px;
         color: #ddd;
     }
 }
 
-
-
 // Slick dots
-.slick-dots{
-   position: absolute;
-   display: flex;
-   bottom: 25px;
-   left: 50%;
-   transform: translate(-50%,50%);
-    li{
+.slick-dots {
+    position: absolute;
+    display: flex;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    li {
         margin: 0px 8px;
         font-size: 0px;
         width: 16px;
@@ -113,47 +106,43 @@ body{
         border-radius: 50%;
         border: 2px solid #ecdf32;
         transition: all 0.4s linear;
-        cursor:pointer;
+        cursor: pointer;
 
-        &.slick-active{
+        &.slick-active {
             background-color: #ecdf32;
             border: none;
         }
     }
 }
 
-
-#counter{
-    &.bg{
-       @media(max-width: 991px) {
-        background: none;
-        // background-color: #d2b22e !important;
-        background-color: #073a59 !important;
-       }
+#counter {
+    &.bg {
+        @media (max-width: 991px) {
+            background: none;
+            // background-color: #d2b22e !important;
+            background-color: #073a59 !important;
+        }
     }
 
-    .counter-box{
+    .counter-box {
         box-shadow: 0px 10px 10px 8px rgba(0, 0, 0, 0.219);
     }
-
-    }
-
+}
 
 // dropdown toggle
 .dropdown-toggle::after {
     border: 0;
     outline: none;
 }
-.fa-chevron-down{
+.fa-chevron-down {
     color: #ddd;
 }
 
 // Button
-.misBtn{
-   
+.misBtn {
     padding: 8px 16px;
     border-radius: 30px;
-    background-color:#ecdf32 ;
+    background-color: #ecdf32;
     color: #fff;
     font-size: 18px;
     line-height: 22px;
@@ -164,63 +153,62 @@ body{
     display: inline-block;
     cursor: pointer;
     font-family: Fira_Medium;
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
         font-size: 12px;
     }
-    &:hover{
+    &:hover {
         transform: translateY(5px);
         transform: all 0.4s linear;
         color: #fff;
-
     }
 }
 
-.section-head{
-   justify-content: center;
-   .sec-title{
-       .title{
-           font-size: 48px;
-           text-transform: capitalize;
-           font-family: Fira_Bold;
-           color: #073a59;
-           @media(max-width: 480px) {
-               font-size: 36px;
-               line-height: 40px;
-           }
-       }
-       img{
-          @media(max-width: 480px) {
-            width: 250px;
-          }
-       }
-       .sub_title{
-           font-size: 30px;
-           color: #073a59;
-           font-family: Fira_Medium;
-           margin: 8px 0px;
-       }
-   }
+.section-head {
+    justify-content: center;
+    .sec-title {
+        .title {
+            font-size: 48px;
+            text-transform: capitalize;
+            font-family: Fira_Bold;
+            color: #073a59;
+            @media (max-width: 480px) {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+        img {
+            @media (max-width: 480px) {
+                width: 250px;
+            }
+        }
+        .sub_title {
+            font-size: 30px;
+            color: #073a59;
+            font-family: Fira_Medium;
+            margin: 8px 0px;
+        }
+    }
 }
 
-.sec-pad{
+.sec-pad {
     padding: 52px 0px;
 }
-.flex{
-   @media(max-width: 1200px) {
-    display: flex;
-    align-items: center;
-   }
+.flex {
+    @media (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.bg{
+.bg {
     background: url('../img/banner/banner_2.png') center center/cover no-repeat;
     object-fit: contain;
-    .container{
-        .title{
+    .container {
+        .title {
             color: #ecdf32;
             text-transform: uppercase;
             font-size: 48px;
-            @media(max-width: 576px) {
+            @media (max-width: 576px) {
                 font-size: 26px;
                 line-height: 30px;
             }
@@ -228,7 +216,7 @@ body{
     }
 }
 
-.price_container{
+.price_container {
     max-width: 920px;
     margin: auto;
 }
@@ -247,14 +235,14 @@ body{
     text-align: center;
     cursor: pointer;
     display: none;
-    @media(max-width: 480px) {
+    @media (max-width: 480px) {
         font-size: 24px;
         bottom: 3em;
         right: 1em;
     }
-  }
-  
-  .top-btm:hover {
+}
+
+.top-btm:hover {
     background: #181818;
     transition: all 0.2s ease-in-out;
-  }
+}

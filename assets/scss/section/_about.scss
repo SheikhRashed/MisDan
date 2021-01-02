@@ -1,0 +1,62 @@
+#about {
+    position: relative;
+    .container {
+        .abt-txt {
+            font-size: 24px;
+            line-height: 36px;
+            text-align: justify;
+
+            @media (max-width: 767px) {
+                margin: 18px 0px !important;
+            }
+            @media (max-width: 576px) {
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+        .abt_img {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            @media (max-width: 767px) {
+                justify-content: center;
+            }
+            img {
+                position: relative;
+            }
+            .content_img {
+                position: relative;
+            }
+            .img_overlay {
+                position: absolute;
+                background: rgba(0, 0, 0, 0.377);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                .icon {
+                    // transform: translate(-50%);
+                    // top: ;
+                    position: absolute;
+                    left: 35%;
+                    top: 50%;
+                    transform: translate(50%, -25%);
+                    i {
+                        font-size: 62px;
+                        color: #fff;
+                    }
+                }
+            }
+            iframe {
+                @media (max-width: 575px) {
+                    width: 400px;
+                    padding: 0px 8px;
+                }
+                @media (max-width: 480px) {
+                    width: 300px;
+                    padding: 0px 8px;
+                }
+            }
+        }
+    }
+}

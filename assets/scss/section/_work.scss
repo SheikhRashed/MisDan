@@ -1,0 +1,25 @@
+#work {
+    background-color: #fbfbfb;
+    .container {
+        .work_process {
+            padding: 50px 0px;
+            .title {
+                font-size: 36px;
+                line-height: 40px;
+                font-family: Fira_Medium;
+                padding: 12px 0px;
+                color: #073a59;
+                text-transform: capitalize;
+                @media (max-width: 1400px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+            .brief {
+                font-size: 16px;
+                line-height: 20px;
+                color: #073a59;
+            }
+        }
+    }
+}

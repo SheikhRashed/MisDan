@@ -1,0 +1,172 @@
+#services {
+    position: relative;
+    .our_service {
+        object-fit: contain;
+        height: 440px;
+        display: flex;
+        align-items: center;
+        @media (max-width: 480px) {
+            height: auto;
+            margin: 20px 0px;
+        }
+        &.img_pro {
+            background: url('../img/service/HomePage--MISDAN-1410px.png') right
+                no-repeat;
+
+            @media (max-width: 1024px) {
+            }
+        }
+        &.graphics_pro {
+            background: url('../img/service/service_2.png') left no-repeat;
+        }
+        &.web_pro {
+            background: url('../img/service/service_3.png') right no-repeat;
+        }
+        &.video_pro {
+            background: url('../img/service/service_4.png') left no-repeat;
+        }
+        &.bg_size {
+            background-size: 670px;
+            @media (max-width: 1350px) {
+                background-size: 550px;
+            }
+            @media (max-width: 1024px) {
+                background-size: 450px;
+            }
+            @media (min-width: 768px) and(max-width:875px) {
+                background-size: 380px;
+            }
+            @media (max-width: 767px) {
+                background: none;
+            }
+        }
+
+        .s-box {
+            .title {
+                font-size: 36px;
+                line-height: 40px;
+                color: #073a59;
+                font-family: Fira_Bold;
+                padding-bottom: 16px;
+            }
+            .txt {
+                font-size: 24px;
+                line-height: 36px;
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            .img_content {
+                display: flex;
+                justify-content: flex-end;
+                @media (min-width: 768px) {
+                    display: none;
+                }
+                &.left {
+                    // justify-content: flex-start;
+                    img {
+                        transform: scaleX(-1);
+                    }
+                }
+                @media (max-width: 767px) {
+                    margin-bottom: 26px;
+                }
+            }
+            img {
+                width: 280px;
+            }
+        }
+    }
+
+    .service_slider {
+        background-color: #f4fbff;
+        .service_box {
+            object-fit: contain;
+            height: 440px;
+            display: flex;
+            align-items: center;
+
+            &.img_pro {
+                background: url('../img/service/HomePage--MISDAN-1410px.png')
+                    right no-repeat;
+            }
+            &.graphics_pro {
+                background: url('../img/service/service_2_h.png') right
+                    no-repeat;
+            }
+            &.web_pro {
+                background: url('../img/service/service_3.png') right no-repeat;
+            }
+            &.video_pro {
+                background: url('../img/service/service_4_h.png') right
+                    no-repeat;
+            }
+            &.bg_size {
+                background-size: 400px;
+                @media (max-width: 1024px) {
+                    background-size: 275px;
+                }
+                @media (max-width: 575px) {
+                    background: none;
+                }
+            }
+
+            .s-box {
+                .title {
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: #073a59;
+                    font-family: Fira_Bold;
+                    padding-bottom: 16px;
+                    @media (max-width: 576px) {
+                        font-size: 26px;
+                        line-height: 36px;
+                        padding-bottom: 6px;
+                    }
+                }
+                .txt {
+                    font-size: 24px;
+                    line-height: 36px;
+                    text-align: justify;
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        // text-align: left;
+                    }
+                }
+                .img_content {
+                    display: flex;
+                    justify-content: flex-end;
+                    @media (min-width: 768px) {
+                        display: none;
+                    }
+                    &.left {
+                        // justify-content: flex-start;
+                        img {
+                            transform: scaleX(-1);
+                        }
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom: 26px;
+                    }
+                }
+                img {
+                    width: 280px;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        display: block;
+        top: 50%;
+        left: 0%;
+        transform: translate(50%, -50%);
+        @media (min-width: 320px) and (max-width: 480px) {
+            left: -2%;
+        }
+        li {
+            margin: 10px 0px;
+        }
+    }
+}

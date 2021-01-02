@@ -1,0 +1,48 @@
+#quote {
+    form {
+        textarea {
+            border: 1px solid #ddd;
+        }
+    }
+    .box {
+        border: 2px dashed #073a59;
+        .upload_title {
+            font-size: 36px;
+            line-height: 40px;
+            font-family: Fira_semi_bold;
+        }
+        .sub_title {
+            font-size: 24px;
+            line-height: 36px;
+            font-family: Fira_Medium;
+
+            .max {
+                color: #2997d4;
+            }
+        }
+        .misBtn {
+            width: 150px;
+            background: rgb(13, 73, 109);
+            background: linear-gradient(
+                90deg,
+                rgba(13, 73, 109, 1) 0%,
+                rgba(38, 143, 202, 1) 100%
+            );
+            text-transform: uppercase;
+            font-family: Fira_semi_bold;
+        }
+    }
+
+    .misBtn {
+        width: 180px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: Fira_semi_bold;
+        background: rgb(210, 179, 45);
+        background: linear-gradient(
+            90deg,
+            rgba(210, 179, 45, 1) 0%,
+            rgba(242, 233, 51, 1) 100%
+        );
+    }
+}
