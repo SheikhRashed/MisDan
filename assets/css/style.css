@@ -249,10 +249,6 @@ body {
   margin: 8px 0px;
 }
 
-.sec-pad {
-  padding: 52px 0px;
-}
-
 @media (max-width: 1200px) {
   .flex {
     display: flex;
