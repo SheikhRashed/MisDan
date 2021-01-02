@@ -27,6 +27,11 @@ $color: (
         @content;
     }
 }
+@mixin mx_medium {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
 @mixin medium {
     @media (min-width: 768px) and (max-width: 1023px) {
         @content;
