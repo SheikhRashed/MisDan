@@ -1,5 +1,5 @@
 // Fonts.scss
-@import  './fonts';
+@import './fonts';
 // functional scss
 @import './functional';
 // Common Scss file
@@ -13,80 +13,79 @@
 /* banner Section End */
 
 /* about Section Start */
-#about{
+#about {
     position: relative;
-    .container{
-
-        .abt-txt{
+    .container {
+        .abt-txt {
             font-size: 24px;
             line-height: 36px;
             text-align: justify;
-          
+
             @media (max-width: 767px) {
-              margin: 18px 0px !important;
+                margin: 18px 0px !important;
             }
-            @media(max-width:576px) {
+            @media (max-width: 576px) {
                 font-size: 16px;
                 text-align: left;
             }
         }
-        .abt_img{
+        .abt_img {
             display: flex;
             justify-content: flex-end;
-            align-items: center ;
-            @media(max-width: 767px) {
+            align-items: center;
+            @media (max-width: 767px) {
                 justify-content: center;
             }
-            img{
+            img {
                 position: relative;
             }
-            .content_img{
+            .content_img {
                 position: relative;
             }
-            .img_overlay{
+            .img_overlay {
                 position: absolute;
                 background: rgba(0, 0, 0, 0.377);
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                .icon{
+                .icon {
                     // transform: translate(-50%);
                     // top: ;
                     position: absolute;
                     left: 35%;
                     top: 50%;
-                    transform: translate(50%,-25%);
-                    i{
+                    transform: translate(50%, -25%);
+                    i {
                         font-size: 62px;
                         color: #fff;
                     }
                 }
             }
-            iframe{
-               @media(max-width: 575px) {
-                width: 400px;
-                padding: 0px 8px;
-               }
-               @media(max-width: 480px) {
-                width: 300px;
-                padding: 0px 8px;
-               }
+            iframe {
+                @media (max-width: 575px) {
+                    width: 400px;
+                    padding: 0px 8px;
+                }
+                @media (max-width: 480px) {
+                    width: 300px;
+                    padding: 0px 8px;
+                }
             }
         }
     }
 }
 
-#Team{
-    .container{
-        .abt_self{
-            .name{
+#Team {
+    .container {
+        .abt_self {
+            .name {
                 font-size: 36px;
                 line-height: 38px;
                 font-family: Fira_Medium;
                 color: #073a59;
             }
-            .post{
+            .post {
                 font-size: 18px;
                 line-height: 22px;
                 color: #073a59;
@@ -96,179 +95,174 @@
 }
 /* about Section End */
 
-
-#services{
-
+#services {
     position: relative;
-    .our_service{
+    .our_service {
         object-fit: contain;
         height: 440px;
         display: flex;
         align-items: center;
-       @media(max-width: 480px) {
-          height: auto; 
-          margin: 20px 0px;
-       }
-        &.img_pro{
-            background: url('../img/service/HomePage--MISDAN-1410px.png') right no-repeat;
-           
-            @media(max-width:1024px) {
+        @media (max-width: 480px) {
+            height: auto;
+            margin: 20px 0px;
+        }
+        &.img_pro {
+            background: url('../img/service/HomePage--MISDAN-1410px.png') right
+                no-repeat;
+
+            @media (max-width: 1024px) {
             }
         }
-        &.graphics_pro{
+        &.graphics_pro {
             background: url('../img/service/service_2.png') left no-repeat;
-           
-           
         }
-        &.web_pro{
+        &.web_pro {
             background: url('../img/service/service_3.png') right no-repeat;
-           
-
         }
-        &.video_pro{
+        &.video_pro {
             background: url('../img/service/service_4.png') left no-repeat;
-           
-
         }
-        &.bg_size{
+        &.bg_size {
             background-size: 670px;
-            @media(max-width: 1350px) {
+            @media (max-width: 1350px) {
                 background-size: 550px;
             }
-            @media(max-width:1024px){
+            @media (max-width: 1024px) {
                 background-size: 450px;
             }
-            @media(min-width:768px) and(max-width:875px) {
+            @media (min-width: 768px) and(max-width:875px) {
                 background-size: 380px;
             }
-            @media(max-width: 767px) {
+            @media (max-width: 767px) {
                 background: none;
             }
         }
 
-       .s-box{
-            .title{
+        .s-box {
+            .title {
                 font-size: 36px;
                 line-height: 40px;
                 color: #073a59;
                 font-family: Fira_Bold;
                 padding-bottom: 16px;
             }
-            .txt{
+            .txt {
                 font-size: 24px;
                 line-height: 36px;
-                @media(max-width:1024px) {
+                @media (max-width: 1024px) {
                     font-size: 18px;
                     line-height: 32px;
                 }
             }
-            .img_content{
+            .img_content {
                 display: flex;
                 justify-content: flex-end;
                 @media (min-width: 768px) {
-                    display:none;
+                    display: none;
                 }
-                &.left{
+                &.left {
                     // justify-content: flex-start;
-                    img{
+                    img {
                         transform: scaleX(-1);
                     }
                 }
-                @media(max-width:767px) {
+                @media (max-width: 767px) {
                     margin-bottom: 26px;
                 }
             }
-           img{
-               width: 280px;
-           }
-       }
+            img {
+                width: 280px;
+            }
+        }
     }
 
-    .service_slider{
+    .service_slider {
         background-color: #f4fbff;
-        .service_box{
+        .service_box {
             object-fit: contain;
             height: 440px;
             display: flex;
             align-items: center;
-           
-            &.img_pro{
-                background: url('../img/service/HomePage--MISDAN-1410px.png') right no-repeat;
+
+            &.img_pro {
+                background: url('../img/service/HomePage--MISDAN-1410px.png')
+                    right no-repeat;
             }
-            &.graphics_pro{
-                background: url('../img/service/service_2_h.png') right no-repeat;
+            &.graphics_pro {
+                background: url('../img/service/service_2_h.png') right
+                    no-repeat;
             }
-            &.web_pro{
+            &.web_pro {
                 background: url('../img/service/service_3.png') right no-repeat;
             }
-            &.video_pro{
-                background: url('../img/service/service_4_h.png') right no-repeat;
+            &.video_pro {
+                background: url('../img/service/service_4_h.png') right
+                    no-repeat;
             }
-            &.bg_size{
+            &.bg_size {
                 background-size: 400px;
-                @media(max-width:1024px){
+                @media (max-width: 1024px) {
                     background-size: 275px;
                 }
-                @media(max-width: 575px) {
-                   background: none;
+                @media (max-width: 575px) {
+                    background: none;
                 }
-              
             }
-    
-           .s-box{
-                .title{
+
+            .s-box {
+                .title {
                     font-size: 36px;
                     line-height: 40px;
                     color: #073a59;
                     font-family: Fira_Bold;
                     padding-bottom: 16px;
-                    @media(max-width: 576px) {
+                    @media (max-width: 576px) {
                         font-size: 26px;
                         line-height: 36px;
                         padding-bottom: 6px;
                     }
                 }
-                .txt{
+                .txt {
                     font-size: 24px;
                     line-height: 36px;
                     text-align: justify;
-                    @media(max-width:768px) {
+                    @media (max-width: 768px) {
                         font-size: 18px;
                         line-height: 24px;
                         // text-align: left;
                     }
                 }
-                .img_content{
+                .img_content {
                     display: flex;
                     justify-content: flex-end;
                     @media (min-width: 768px) {
-                        display:none;
+                        display: none;
                     }
-                    &.left{
+                    &.left {
                         // justify-content: flex-start;
-                        img{
+                        img {
                             transform: scaleX(-1);
                         }
                     }
-                    @media(max-width:767px) {
+                    @media (max-width: 767px) {
                         margin-bottom: 26px;
                     }
                 }
-               img{
-                   width: 280px;
-               }
-           }
+                img {
+                    width: 280px;
+                }
+            }
         }
     }
-    .slick-dots{
+    .slick-dots {
         display: block;
         top: 50%;
         left: 0%;
-        transform: translate(50%,-50%);
-        @media(min-width: 320px) and (max-width: 480px) {
-            left: -2%
+        transform: translate(50%, -50%);
+        @media (min-width: 320px) and (max-width: 480px) {
+            left: -2%;
         }
-        li{
+        li {
             margin: 10px 0px;
         }
     }
@@ -276,19 +270,17 @@
 /* Services Section End */
 
 /* gallery Section Start */
-#gallery{
+#gallery {
     background-color: #f4fbff;
-    .container{
-
-        .filters{
-
-            .mix{
-                .content{
+    .container {
+        .filters {
+            .mix {
+                .content {
                     position: relative;
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
-                    .img_overlay{
+                    .img_overlay {
                         position: absolute;
                         top: 0px;
                         left: 0px;
@@ -298,97 +290,97 @@
                         overflow: hidden;
                         transition: all 0.2s linear;
                         visibility: hidden;
-                        .misBtn{
+                        .misBtn {
                             position: absolute;
                             top: 50%;
                             left: 25%;
                             width: 50%;
                             padding: 5px;
                             cursor: pointer;
-                            background: rgb(13,73,109);
-                            background: linear-gradient(90deg, rgba(13,73,109,1) 0%, rgba(38,143,202,1) 100%);
+                            background: rgb(13, 73, 109);
+                            background: linear-gradient(
+                                90deg,
+                                rgba(13, 73, 109, 1) 0%,
+                                rgba(38, 143, 202, 1) 100%
+                            );
                         }
                     }
 
-                    &:hover{
-
-                        .img_overlay{
+                    &:hover {
+                        .img_overlay {
                             visibility: visible;
                         }
                     }
                 }
-              
             }
         }
 
-
-        .misBtn{
+        .misBtn {
             text-transform: uppercase;
             font-family: Fira_Bold;
-            background: rgb(210,179,45);
-            background: linear-gradient(90deg, rgba(210,179,45,1) 0%, rgba(242,233,51,1) 100%);
-           
+            background: rgb(210, 179, 45);
+            background: linear-gradient(
+                90deg,
+                rgba(210, 179, 45, 1) 0%,
+                rgba(242, 233, 51, 1) 100%
+            );
         }
-
     }
-
 }
 @import './filter';
 /* gallery Section End */
 
 /* client Section Start */
-#client{
-    .container{
-        .client_boxs{
+#client {
+    .container {
+        .client_boxs {
             margin: 60px 0px;
             overflow: visible !important;
             // padding: 90px 0px;
-        //   display: grid;
-        //   grid-template-columns: repeat(2,1fr);
-        //   gap: 80px 90px;
-        //   margin-top: 60px;
+            //   display: grid;
+            //   grid-template-columns: repeat(2,1fr);
+            //   gap: 80px 90px;
+            //   margin-top: 60px;
             // margin: 30px;
-          @media (max-width: 767px) {
-            //   grid-template-columns: 1fr;
-          }
-            .cmnt_box{
+            @media (max-width: 767px) {
+                //   grid-template-columns: 1fr;
+            }
+            .cmnt_box {
                 position: relative;
                 background-color: #fdf9ed;
                 border-radius: 25px;
                 // box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
                 padding: 70px 10px;
-              
-              
+
                 // width: 50%;
                 margin: auto;
                 margin: 0px 20px;
                 overflow: visible;
-                .name-rating{
-
-                    .name{
+                .name-rating {
+                    .name {
                         font-size: 18px;
                         line-height: 30px;
                         color: #073a59;
                         margin-bottom: 0px;
                     }
-                    .date{
+                    .date {
                         font-size: 16px;
                         line-height: 30px;
                         color: #073a59;
                     }
-                    .star{
+                    .star {
                         display: flex;
                         align-items: flex-start;
                         justify-content: flex-end;
                         margin-top: 5px;
                     }
                 }
-                .client_feed{
+                .client_feed {
                     font-size: 16px;
                     line-height: 24px;
                     color: #073a59;
                 }
-                .read-more{
+                .read-more {
                     color: #073a59;
                     font-size: 16px;
                     line-height: 22px;
@@ -396,26 +388,26 @@
                 }
             }
 
-            .comment_icon{
+            .comment_icon {
                 position: absolute;
                 top: 10px;
                 overflow: visible;
                 left: 10%;
-                @media(max-width: 575px) {
+                @media (max-width: 575px) {
                     left: 10%;
                 }
-                @media(min-width: 320px) and(max-width:480px) {
+                @media (min-width: 320px) and(max-width:480px) {
                     left: 18%;
                 }
             }
         }
     }
-    .slick-dots{
+    .slick-dots {
         top: 350px;
-        @media(max-width: 1200px) {
+        @media (max-width: 1200px) {
             top: 380px;
         }
-        @media(max-width: 412px) {
+        @media (max-width: 412px) {
             top: 410px;
         }
     }
@@ -423,24 +415,24 @@
 /* client Section End */
 
 /* workPlan Section Start */
-#work{
+#work {
     background-color: #fbfbfb;
-    .container{
-        .work_process{
+    .container {
+        .work_process {
             padding: 50px 0px;
-            .title{
+            .title {
                 font-size: 36px;
                 line-height: 40px;
                 font-family: Fira_Medium;
                 padding: 12px 0px;
                 color: #073a59;
                 text-transform: capitalize;
-                @media(max-width: 1400px) {
+                @media (max-width: 1400px) {
                     font-size: 30px;
                     line-height: 40px;
                 }
             }
-            .brief{
+            .brief {
                 font-size: 16px;
                 line-height: 20px;
                 color: #073a59;
@@ -451,34 +443,33 @@
 /* workPlan Section End */
 
 /* request Section Start */
-#request{
+#request {
     background-color: #cfae2c;
     color: #fff;
     padding: 60px 0px;
-    .container{
-        .req_title{
+    .container {
+        .req_title {
             font-size: 30px;
             line-height: 34px;
             font-family: Fira_Bold;
             padding-bottom: 10px;
             color: #fff;
-            @media(max-width: 576px) {
+            @media (max-width: 576px) {
                 font-size: 18px;
                 line-height: 22px;
             }
         }
-        .req_txt{
+        .req_txt {
             font-size: 30px;
             line-height: 36px;
             padding-bottom: 15px;
             color: #fff;
-            @media(max-width: 576px) {
+            @media (max-width: 576px) {
                 font-size: 18px;
                 line-height: 22px;
             }
-
         }
-        .misBtn{
+        .misBtn {
             background: #fff;
             color: #cfae2c;
             text-transform: uppercase;
@@ -489,56 +480,63 @@
 /* request Section End */
 
 /* contact Section start */
-#quote{
-    
-    form{
+#quote {
+    form {
         textarea {
             border: 1px solid #ddd;
         }
     }
-    .box{
-        border:  2px dashed #073a59;
-        .upload_title{
+    .box {
+        border: 2px dashed #073a59;
+        .upload_title {
             font-size: 36px;
             line-height: 40px;
             font-family: Fira_semi_bold;
         }
-        .sub_title{
+        .sub_title {
             font-size: 24px;
             line-height: 36px;
             font-family: Fira_Medium;
 
-            .max{
+            .max {
                 color: #2997d4;
             }
         }
-        .misBtn{
+        .misBtn {
             width: 150px;
-            background: rgb(13,73,109);
-            background: linear-gradient(90deg, rgba(13,73,109,1) 0%, rgba(38,143,202,1) 100%);
+            background: rgb(13, 73, 109);
+            background: linear-gradient(
+                90deg,
+                rgba(13, 73, 109, 1) 0%,
+                rgba(38, 143, 202, 1) 100%
+            );
             text-transform: uppercase;
             font-family: Fira_semi_bold;
         }
     }
 
-    .misBtn{
+    .misBtn {
         width: 180px;
         text-transform: uppercase;
         font-size: 18px;
         font-family: Fira_semi_bold;
-        background: rgb(210,179,45);
-        background: linear-gradient(90deg, rgba(210,179,45,1) 0%, rgba(242,233,51,1) 100%);
+        background: rgb(210, 179, 45);
+        background: linear-gradient(
+            90deg,
+            rgba(210, 179, 45, 1) 0%,
+            rgba(242, 233, 51, 1) 100%
+        );
     }
 }
 /* contact Section End */
 
 // Counter
 
-.counter_inner{
+.counter_inner {
     justify-content: center;
 }
 
-.counter-box{
+.counter-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -548,26 +546,22 @@
     border-radius: 50%;
     border: 5px solid #fff;
     color: #fff;
-    i{
+    i {
         font-size: 30px;
     }
     .count {
         padding: 8px 0px;
-        span{
+        span {
             font-size: 48px;
             font-family: Fira_Bold;
         }
-       
     }
-    .counter_title{
+    .counter_title {
         font-size: 22px !important;
         font-family: Fira_Medium;
         text-transform: capitalize;
     }
 }
-
-
-
 
 /*Price section start */
 @import './price';
@@ -575,4 +569,3 @@
 /* footer Section Start */
 @import './footer';
 /* footer Section End */
-
