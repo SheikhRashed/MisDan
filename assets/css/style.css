@@ -522,33 +522,25 @@ body {
   color: #fff;
 }
 
-#banner {
+.banner {
   background: #1d4b67;
   background: linear-gradient(0deg, #1d4b67 29%, #06273c 91%);
   position: relative;
 }
 
-#banner .container .slide_banner {
+.banner__slider {
   padding: 160px 0px;
   display: flex;
   align-items: center;
 }
 
 @media (max-width: 1200px) {
-  #banner .container .slide_banner {
+  .banner__slider {
     padding: 90px 0px;
   }
 }
 
-@media (max-width: 767px) {
-  #banner .container .slide_banner div .bnnr_txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-#banner .container .slide_banner div .bnnr_txt .bnnr_head {
+.banner__content_text .bnnr_head {
   font-size: 48px;
   line-height: 58px;
   color: #f2e933;
@@ -558,7 +550,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  #banner .container .slide_banner div .bnnr_txt .bnnr_head {
+  .banner__content_text .bnnr_head {
     font-size: 42px;
     line-height: 46px;
     margin-bottom: 16px;
@@ -566,72 +558,82 @@ body {
 }
 
 @media (max-width: 991px) {
-  #banner .container .slide_banner div .bnnr_txt .bnnr_head {
+  .banner__content_text .bnnr_head {
     font-size: 32px;
     line-height: 42px;
   }
 }
 
-@media (max-width: 576px) {
-  #banner .container .slide_banner div .bnnr_txt .bnnr_head {
-    font-size: 26px;
-    line-height: 42px;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-}
-
-#banner .container .slide_banner div .bnnr_txt .head_txt {
+.banner__content_text .head_txt {
   font-size: 22px;
   line-height: 26px;
   color: #f2e933;
 }
 
 @media (max-width: 1024px) {
-  #banner .container .slide_banner div .bnnr_txt .head_txt {
+  .banner__content_text .head_txt {
     font-size: 18px;
     line-height: 2px;
   }
 }
 
-@media (max-width: 576px) {
-  #banner .container .slide_banner div .bnnr_txt .head_txt {
+.banner__content_text .btns {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+
+.banner__content_text .btns li {
+  margin: 0px 16px;
+}
+
+.banner__content_text .btns li:first-child {
+  margin-left: 0px;
+}
+
+.banner__content_text .btns li button,
+.banner__content_text .btns li .btn:hover,
+.banner__content_text .btns li .btn:active,
+.banner__content_text .btns li .btn:focus {
+  text-transform: uppercase;
+}
+
+.banner__content_text .btns li button:hover,
+.banner__content_text .btns li .btn:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #f2e933;
+}
+
+.banner__img-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .banner__content_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@media (min-width: 320px) and (max-width: 575px) {
+  .banner .bnnr_head {
+    font-size: 26px;
+    line-height: 42px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .banner__content_text .head_txt {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
   }
 }
 
-#banner .container .slide_banner div .bnnr_txt .btns {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: -5px;
-}
-
-#banner .container .slide_banner div .bnnr_txt .btns li {
-  margin: 0px 16px;
-}
-
-#banner .container .slide_banner div .bnnr_txt .btns li:first-child {
-  margin-left: 0px;
-}
-
-#banner .container .slide_banner div .bnnr_txt .btns li button,
-#banner .container .slide_banner div .bnnr_txt .btns li .btn:hover,
-#banner .container .slide_banner div .bnnr_txt .btns li .btn:active,
-#banner .container .slide_banner div .bnnr_txt .btns li .btn:focus {
-  text-transform: uppercase;
-}
-
-#banner .container .slide_banner div .bnnr_txt .btns li button:hover,
-#banner .container .slide_banner div .bnnr_txt .btns li .btn:hover {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #f2e933;
-}
-
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
 #about {
