@@ -1,123 +1,134 @@
-#price{
-    .container{
-        .price_container{
-            .col-8{
+#price {
+    .container {
+        .price_container {
+            .col-8 {
                 // margin: 0 !important;
                 padding: 0 !important;
                 padding-right: 4px !important;
             }
-            .col-4{
+            .col-4 {
                 margin: 0 !important;
                 padding: 0 !important;
             }
-            
-            .top_head{
-              &:first-child{
-                .service_title{
-                    background-color: #073a59 !important;
-                    padding: 22px 0px;
-                    .title{
-                        color: #fff;
-                        font-size: 30px;
-                        line-height: 36px;
-                        font-family: Fira_Medium;
-                        margin: 0;
-                       
+
+            .top_head {
+                &:first-child {
+                    .service_title {
+                        background-color: #073a59 !important;
+                        padding: 22px 0px;
+                        .title {
+                            color: #fff;
+                            font-size: 30px;
+                            line-height: 36px;
+                            font-family: Fira_Medium;
+                            margin: 0;
+                        }
                     }
-                }
-                .price_title{
-                    @extend .service_title;
-                    background-color: #d4b62d !important;
-                    .title{
-                        color: #010101;
-                        
-                    }
-                }
-              }
-              &:nth-child(even){
-                .service_title{
-                    background-color: #f0f0f0;
-                    padding: 22px 0px;
-                    .title{
-                        color: #010101;
-                        font-size: 30px;
-                        line-height: 36px;
-                        margin: 0;
-                        @media(max-width: 576px) {
-                            font-size: 18px;
+                    .price_title {
+                        @extend .service_title;
+                        background-color: #d4b62d !important;
+                        .title {
+                            color: #010101;
                         }
                     }
                 }
-                .price_title{
-                    @extend .service_title;
-                    background-color: #f0f0f0;
-                   
+                &:nth-child(even) {
+                    .service_title {
+                        background-color: #f0f0f0;
+                        padding: 22px 0px;
+                        .title {
+                            color: #010101;
+                            font-size: 30px;
+                            line-height: 36px;
+                            margin: 0;
+                            @media (max-width: 576px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .price_title {
+                        @extend .service_title;
+                        background-color: #f0f0f0;
+                    }
                 }
-              }
-              &:nth-child(odd){
-                .service_title{
-                    background-color: #c6c6c6;
-                    padding: 22px 0px;
-                    .title{
-                        font-size: 30px;
-                        line-height: 36px;
-                        margin: 0;
-                        @media(max-width: 576px) {
-                            font-size: 16px;
+                &:nth-child(odd) {
+                    .service_title {
+                        background-color: #c6c6c6;
+                        padding: 22px 0px;
+                        .title {
+                            font-size: 30px;
+                            line-height: 36px;
+                            margin: 0;
+                            @media (max-width: 576px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .price_title {
+                        @extend .service_title;
+                        background-color: #c6c6c6;
+                        .title {
+                            color: #010101;
                         }
                     }
                 }
-                .price_title{
-                    @extend .service_title;
-                    background-color: #c6c6c6;
-                    .title{
-                        color: #010101;
-                    }
-                }
-              }
-              
             }
         }
-        .NB{
-            .text{
+        .NB {
+            .text {
                 font-size: 30px;
                 color: #010101;
                 margin: 0;
                 padding: 0px 15px;
-                @media(max-width: 576px) {
+                @media (max-width: 576px) {
                     font-size: 18px;
                 }
             }
         }
-        #log_sign{
+        #log_sign {
             justify-content: center;
             margin-top: 24px;
-            li{
+            li {
                 margin: auto 20px;
 
-                a{
-                    .misBtn{
-                        background: rgb(210,179,45);
-                        background: linear-gradient(90deg, rgba(210,179,45,1) 0%, rgba(242,233,51,1) 100%);
+                a {
+                    .misBtn {
+                        background: rgb(210, 179, 45);
+                        background: linear-gradient(
+                            90deg,
+                            rgba(210, 179, 45, 1) 0%,
+                            rgba(242, 233, 51, 1) 100%
+                        );
                         text-transform: uppercase;
                         font-family: Fira_semi_bold;
 
-                        &:hover{
+                        &:hover {
                             background: #fff;
                             color: #d4b62d;
                         }
-                      
                     }
-
                 }
-
             }
         }
     }
-    .misBtn{
-       @media(max-width: 480px) {
-        font-size: 9px;
-        line-height: 12px;
-       }
+    .misBtn {
+        @media (max-width: 480px) {
+            font-size: 9px;
+            line-height: 12px;
+        }
     }
+}
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
 }

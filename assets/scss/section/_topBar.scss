@@ -1,92 +1,105 @@
-#topBar{
+#topBar {
     background: #073a59;
 
-    .bar_content{
+    .bar_content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px 0px;
-        @media(max-width: 576px) {
+        @media (max-width: 576px) {
             flex-direction: column;
         }
-        .cols{
+        .cols {
             @media (max-width: 57px) {
                 padding: 10px 0px;
             }
-            &.columnOne{
+            &.columnOne {
                 color: #fff;
                 flex: 1;
 
                 // Responsive for medium devices
-                @media (max-width:991px) {
+                @media (max-width: 991px) {
                     display: flex;
                     flex-direction: column;
                 }
 
-                span{
+                span {
                     margin: 0px 5px;
-                    
-                    &:first-child{
+
+                    &:first-child {
                         margin-left: 0px;
                     }
                 }
-                .phn{
+                .phn {
                     @media (max-width: 576px) {
-                       text-align: center; 
-                       margin: 5px 0px;   
+                        text-align: center;
+                        margin: 5px 0px;
                     }
                 }
             }
 
-            &.columnTwo{
+            &.columnTwo {
                 display: flex;
                 flex: 1;
                 justify-content: flex-end;
-                .socialIcon{
+                .socialIcon {
                     display: flex;
                     align-items: center;
                     flex: 2;
                     justify-content: flex-end;
-                    li{
+                    li {
                         margin: 0px 5px;
-                        a{
-                            i{
+                        a {
+                            i {
                                 color: #fff;
                                 font-size: 18px;
                             }
                         }
                     }
                 }
-                .drop_user{
-                  display: flex;
-                  align-items: center;
-                  flex: 1;
-                  margin-left: 10px;
-                  justify-content: flex-end;
-                  position: relative;
-                  z-index: 9999999999;
-                  .user{
-                      i{
-                          font-size: 30px;
-                          color: #fff;
-                      }
-                  }
-                  .btn-group{
-                      position: relative;
+                .drop_user {
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+                    margin-left: 10px;
+                    justify-content: flex-end;
+                    position: relative;
+                    z-index: 9999999999;
+                    .user {
+                        i {
+                            font-size: 30px;
+                            color: #fff;
+                        }
+                    }
+                    .btn-group {
+                        position: relative;
 
-                      .dropdown-menu{
-
-                          &.show{
-                            top: 8px !important;
-                            left: -155px !important;
-                            @media(max-width: 1440px) {
-                                left: -125px !important;
+                        .dropdown-menu {
+                            &.show {
+                                top: 8px !important;
+                                left: -155px !important;
+                                @media (max-width: 1440px) {
+                                    left: -125px !important;
+                                }
                             }
-                          }
-                      }
-                  }
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
 }

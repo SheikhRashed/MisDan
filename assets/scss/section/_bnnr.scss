@@ -1,96 +1,113 @@
-#banner{
-    background: rgb(29,75,103);
-    background: linear-gradient(0deg, rgba(29,75,103,1) 29%, rgba(6,39,60,1) 91%);
+#banner {
+    background: rgb(29, 75, 103);
+    background: linear-gradient(
+        0deg,
+        rgba(29, 75, 103, 1) 29%,
+        rgba(6, 39, 60, 1) 91%
+    );
     position: relative;
-   
-   .container{
 
-    .slide_banner{
-        padding: 160px 0px;
-        display: flex;
-        align-items: center;
+    .container {
+        .slide_banner {
+            padding: 160px 0px;
+            display: flex;
+            align-items: center;
 
-        @media(max-width:1200px) {
-            padding: 90px 0px;
-        }
-        @media(max-width:767px) {
-            // padding: 60px 0px;
-        }
-        div{
-            // height: 100vh;
-           .bnnr_txt{
-                @media(max-width: 767px) {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-            .bnnr_head{
-                font-size: 48px;
-                line-height: 58px;
-                color: #f2e933;
-                font-family: Fira_Bold;
-                text-transform: uppercase;
-                padding-bottom: 16px;
-                @media (max-width:1024px) {
-                    font-size: 42px;
-                    line-height: 46px;
-                    margin-bottom: 16px;
-                }
-                @media (max-width:991px) {
-                    font-size: 32px;
-                    line-height: 42px;
-                }
-                @media (max-width:576px) {
-                    font-size: 26px;
-                    line-height: 42px;
-                    margin-bottom: 16px;
-                    text-align: center;
-                }
-
-                // @media(max-width:576px){
-                //     font-size: 36px;
-                //     line-height: 40px;
-                // }
+            @media (max-width: 1200px) {
+                padding: 90px 0px;
             }
-            .head_txt{
-                font-size: 22px;
-                line-height: 26px;
-                color: #f2e933;
-                @media (max-width:1024px) {
-                    font-size: 18px;
-                    line-height: 2px;
-                }   
-                @media(max-width:576px){
-                    font-size: 16px;
-                    line-height: 20px;
-                    text-align: center;
-                }
+            @media (max-width: 767px) {
+                // padding: 60px 0px;
             }
-            .btns{
-                margin-top: 30px;
-                margin-bottom: 20px;
-                margin-left: -5px;
-                li{
-                    margin: 0px 16px;
-                    &:first-child{
-                        margin-left: 0px;
+            div {
+                // height: 100vh;
+                .bnnr_txt {
+                    @media (max-width: 767px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                     }
-                    button{
+                    .bnnr_head {
+                        font-size: 48px;
+                        line-height: 58px;
+                        color: #f2e933;
+                        font-family: Fira_Bold;
                         text-transform: uppercase;
+                        padding-bottom: 16px;
+                        @media (max-width: 1024px) {
+                            font-size: 42px;
+                            line-height: 46px;
+                            margin-bottom: 16px;
+                        }
+                        @media (max-width: 991px) {
+                            font-size: 32px;
+                            line-height: 42px;
+                        }
+                        @media (max-width: 576px) {
+                            font-size: 26px;
+                            line-height: 42px;
+                            margin-bottom: 16px;
+                            text-align: center;
+                        }
 
-                        &:hover{
-                            background: transparent;
-                            color: #fff;
-                            border: 1px solid #f2e933;
+                        // @media(max-width:576px){
+                        //     font-size: 36px;
+                        //     line-height: 40px;
+                        // }
+                    }
+                    .head_txt {
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #f2e933;
+                        @media (max-width: 1024px) {
+                            font-size: 18px;
+                            line-height: 2px;
+                        }
+                        @media (max-width: 576px) {
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-align: center;
+                        }
+                    }
+                    .btns {
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        margin-left: -5px;
+                        li {
+                            margin: 0px 16px;
+                            &:first-child {
+                                margin-left: 0px;
+                            }
+                            button {
+                                text-transform: uppercase;
+
+                                &:hover {
+                                    background: transparent;
+                                    color: #fff;
+                                    border: 1px solid #f2e933;
+                                }
+                            }
                         }
                     }
                 }
             }
-           }
-        }
-        .slick-dots{
-            // display: none;
+            .slick-dots {
+                // display: none;
+            }
         }
     }
-   }
+}
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
 }

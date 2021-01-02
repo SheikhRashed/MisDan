@@ -1,16 +1,39 @@
-$fonts:(
-    primary: "fonts_name",
-    secondary: "fonts_name",
+$fonts: (
+    primary: 'fonts_name',
+    secondary: 'fonts_name',
 );
-@function font($font_name){
+@function font($font_name) {
     @return map-get($map: $fonts, $key: $font_name);
 }
 $one: red;
-$color:(
+$color: (
     primary: $one,
-    secondary: "color_name",
+    secondary: 'color_name',
 );
 
 @function color($colors_name) {
     @return map-get($map: $color, $key: $colors_name);
+}
+
+// Responsive function
+@mixin ex_small {
+    @media (min-width: 320px) and(max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin medium {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+@mixin large {
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        @content;
+    }
 }

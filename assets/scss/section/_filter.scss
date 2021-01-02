@@ -1,7 +1,7 @@
 .mix {
     display: inline-block;
     vertical-align: top;
-    
+
     margin-bottom: 1rem;
     position: relative;
 
@@ -22,33 +22,34 @@
     column-count: 5;
 }
 
-
-
-
-.gallery{
+.gallery {
     margin: 60px 0px;
-    .controls{
+    .controls {
         // display: flex;
         justify-content: space-between;
         margin: 0px;
-        button{
+        button {
             margin: 0px 12px;
             padding: 6px 20px;
             text-transform: uppercase;
             color: #073a59;
             border-radius: 5px;
             font-family: Fira_semi_bold;
-            border: 2px solid rgb(210,179,45);
-            &:last-child{
-                @media(max-width:1199px) {
+            border: 2px solid rgb(210, 179, 45);
+            &:last-child {
+                @media (max-width: 1199px) {
                     margin-top: 10px;
                 }
             }
-            &.mixitup-control-active{
-            background: rgb(210,179,45);
-            background: linear-gradient(90deg, rgba(210,179,45,1) 0%, rgba(242,233,51,1) 100%);
-            color: #fff;
-            border: none;
+            &.mixitup-control-active {
+                background: rgb(210, 179, 45);
+                background: linear-gradient(
+                    90deg,
+                    rgba(210, 179, 45, 1) 0%,
+                    rgba(242, 233, 51, 1) 100%
+                );
+                color: #fff;
+                border: none;
             }
             @media (max-width: 991px) {
                 margin: 6px 0px;
@@ -98,4 +99,18 @@
         -moz-column-count: 5;
         column-count: 5;
     }
+}
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
 }
