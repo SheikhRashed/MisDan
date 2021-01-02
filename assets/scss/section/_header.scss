@@ -1,12 +1,10 @@
-header {
+.header {
     position: sticky;
     top: -10px;
     z-index: 9999;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.253);
     .navbar {
         .container {
-            .navbar-brand {
-            }
             .navbar-collapse {
                 .navbar-nav {
                     @media (max-width: 1199px) {
@@ -52,7 +50,6 @@ header {
                             @media (max-width: 1199px) {
                                 background-color: #ddd;
                             }
-                            // background-color: #ddd;
                             &::after {
                                 width: 100%;
                             }
@@ -95,18 +92,4 @@ header {
             }
         }
     }
-}
-
-// Responsive
-/* === For Small Device ( 0px - 767px) == */
-@include small {
-}
-/* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
-/* === For Medium Device ( 768px - 1023px) == */
-@include medium {
-}
-/* === For Large Device ( 1024px - 1200px) == */
-@include large {
 }

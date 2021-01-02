@@ -416,7 +416,7 @@ body {
 
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */
-header {
+.header {
   position: sticky;
   top: -10px;
   z-index: 9999;
@@ -424,23 +424,23 @@ header {
 }
 
 @media (max-width: 1199px) {
-  header .navbar .container .navbar-collapse .navbar-nav {
+  .header .navbar .container .navbar-collapse .navbar-nav {
     text-align: center;
   }
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item {
   position: relative;
   margin: 0px 12px;
 }
 
 @media (max-width: 1600px) {
-  header .navbar .container .navbar-collapse .navbar-nav .nav-item {
+  .header .navbar .container .navbar-collapse .navbar-nav .nav-item {
     margin: 0px 2px;
   }
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item::after {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item::after {
   content: '';
   position: absolute;
   left: 0;
@@ -451,45 +451,45 @@ header .navbar .container .navbar-collapse .navbar-nav .nav-item::after {
   transition: all 0.2s linear;
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item:last-child {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item:last-child {
   background-color: #073a59;
   border: none;
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item:last-child .nav-link {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item:last-child .nav-link {
   color: #ddd;
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item:last-child::after {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item:last-child::after {
   width: 0px;
   height: 0px;
 }
 
 @media (max-width: 1199px) {
-  header .navbar .container .navbar-collapse .navbar-nav .nav-item.active {
+  .header .navbar .container .navbar-collapse .navbar-nav .nav-item.active {
     background: #ddd;
   }
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item.active::after {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item.active::after {
   width: 100%;
 }
 
 @media (max-width: 1199px) {
-  header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover {
+  .header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover {
     background-color: #ddd;
   }
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover::after {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover::after {
   width: 100%;
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover:last-child {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover:last-child {
   background-color: #073a59;
 }
 
-header .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+.header .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   line-height: 20px;
   color: #1b3872;
@@ -498,34 +498,30 @@ header .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 @media (max-width: 1199px) {
-  header .navbar .container .navbar-collapse .form-inline {
+  .header .navbar .container .navbar-collapse .form-inline {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-header .navbar .container .navbar-collapse .form-inline .form-control {
+.header .navbar .container .navbar-collapse .form-inline .form-control {
   border: none;
   background-color: transparent;
   outline: none;
 }
 
 @media (max-width: 1199px) {
-  header .navbar .container .navbar-collapse .form-inline .form-control {
+  .header .navbar .container .navbar-collapse .form-inline .form-control {
     flex: 1;
   }
 }
 
-header .navbar .container .navbar-collapse .form-inline .btn:hover {
+.header .navbar .container .navbar-collapse .form-inline .btn:hover {
   background-color: #073a59;
   color: #fff;
 }
 
-/* === For Small Device ( 0px - 767px) == */
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-/* === For Large Device ( 1024px - 1200px) == */
 #banner {
   background: #1d4b67;
   background: linear-gradient(0deg, #1d4b67 29%, #06273c 91%);
